@@ -1,3 +1,113 @@
-body {
-    font-family: 'Bayon', cursive;
+html body {
+//    font-family: 'Courgette', cursive;
+    font-family: 'Cookie', cursive;
+    font-family: 'Cormorant Unicase', serif;
+}
+
+.content-container {
+    
+}
+
+
+#homepage {
+    background-image: url(img/homepage.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    min-height: 705px;
+    
+    .navbar {
+        font-size: 18px;
+
+        .navbar-brand {
+            font-size: 24px;
+        }
+        
+        a {
+            color: white;
+        }
+    }
+}
+/* HOMEPAGE */
+
+/* //MENU.HTML// */
+
+#navigation {
+    background: grey;
+    
+    .navbar {
+        font-size: 18px;
+        
+        .navbar-brand {
+            font-size: 24px;
+        }
+        
+        a {
+            color: white;
+        }
+    }
+}
+
+#menu {
+    .header {
+        text-align: center;
+    }
+    
+    .menu-header {
+        position: relative;
+        text-align: center;
+        color: white;
+        text-decoration: line-through;
+    }
+    
+    .specialties {
+        position: relative;
+        display: flex;
+        margin-bottom: 50px;
+        
+        .specialty {
+            flex: 1;
+            text-align: center;
+            border: 2px solid black;
+            img {
+                width: 300px;
+            }
+        }
+    }
+    
+    .menu {
+        position: relative;
+        display: flex;
+        
+        .entrees {
+            flex: 1;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            background-image: url(img/pasta3.jpg);
+            background-size: 500px;
+            background-position: -32px -312px;
+        }
+        
+        .appetizers {
+            flex: 1;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            background-image: url(img/carousel2.jpg);
+            background-size: 550px;
+            background-position: -126px -96px;
+        }
+        
+        .desserts {
+            flex: 1;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            background-image: url(img/dessert2.jpg);
+            background-size: 550px;
+            background-position: 5px -65px;
+        }
+    }
 }

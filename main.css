@@ -1,25 +1,57 @@
 html body {
   font-family: 'Cookie', cursive;
-  font-family: 'Cormorant Unicase', serif; }
+  font-family: 'Cormorant Unicase', serif;
+  background: #1d1d1d; }
 
-#homepage {
-  background-image: url(img/homepage.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  position: relative;
-  min-height: 705px; }
-  #homepage .navbar {
-    font-size: 18px; }
-    #homepage .navbar .navbar-brand {
+.content-container {
+  margin-left: 40px;
+  margin-right: 40px; }
+
+#navbar {
+  /* NAVBAR */ }
+  #navbar .navbar {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    #navbar .navbar .navbar-brand {
       font-size: 24px; }
-    #homepage .navbar a {
-      color: white; }
+    #navbar .navbar .navbar-right {
+      border-bottom: 2px solid #aca7a8;
+      position: relative;
+      top: 20px; }
+      #navbar .navbar .navbar-right li:nth-of-type(-n+3) {
+        border-right: 1px solid #aca7a8; }
+      #navbar .navbar .navbar-right li {
+        height: 30px;
+        position: relative; }
+        #navbar .navbar .navbar-right li a:nth-of-type(-n+3) {
+          padding-left: 30px;
+          padding-right: 30px; }
+        #navbar .navbar .navbar-right li a {
+          position: relative;
+          top: -20px; }
+    #navbar .navbar a {
+      color: #97614a; }
 
-/* HOMEPAGE */
+/* ID NAVBAR */
+#homepage #carousel-example-generic #slide1 img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: 0px -240px; }
+#homepage #carousel-example-generic #slide2 img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: 0px -248px; }
+#homepage h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #97614a; }
+
 /* //MENU.HTML// */
 #navigation {
-  background: grey; }
+  background: #575151; }
   #navigation .navbar {
     font-size: 18px; }
     #navigation .navbar .navbar-brand {
@@ -27,79 +59,130 @@ html body {
     #navigation .navbar a {
       color: white; }
 
-#menu .header {
-  text-align: center; }
-#menu .menu-header {
-  position: relative;
-  text-align: center;
-  color: white;
-  text-decoration: line-through; }
-#menu .menu-item {
-  position: relative;
-  list-style: none;
-  color: white;
-  top: 240px; }
-#menu .specialties {
-  position: relative;
-  display: flex;
-  margin-bottom: 50px; }
-  #menu .specialties .specialty-pasta {
-    flex: 1;
-    text-align: center;
-    border: 2px solid black;
-    width: 300px;
-    height: 300px;
-    background-image: url(img/pasta1.jpg);
-    background-size: 500px;
-    background-position: -80px -20px; }
-  #menu .specialties .specialty-pizza {
-    flex: 1;
-    text-align: center;
-    border: 2px solid black;
-    width: 300px;
-    height: 300px;
-    background-image: url(img/pizza1.jpg);
-    background-size: 500px; }
-  #menu .specialties .specialty-dessert {
-    flex: 1;
-    text-align: center;
-    border: 2px solid black;
-    width: 300px;
-    height: 300px;
-    background-image: url(img/dessert1.jpg);
-    background-size: 625px;
-    background-position: -10px -155px; }
-#menu .menu {
-  position: relative;
-  display: flex; }
-  #menu .menu .entrees {
-    flex: 1;
-    border: 2px solid black;
-    width: 300px;
-    height: 100%;
-    background-color: #575151;
-    background-repeat: no-repeat;
-    background-image: url(img/pasta3.jpg);
-    background-size: 500px;
-    background-position: -32px -312px; }
-  #menu .menu .appetizers {
-    flex: 1;
-    border: 2px solid black;
-    width: 300px;
-    height: 100%;
-    background-color: #575151;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom, rgba(76, 76, 76, 0) 20%, #2c2c2c 54%, #1c1c1c 60%, black 70%, #131313 99%, #1c1c1c 100%), url(img/carousel2.jpg);
-    background-size: 550px;
-    background-position: -126px -96px; }
-  #menu .menu .desserts {
-    flex: 1;
-    border: 2px solid black;
-    width: 300px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(transparent 10%, #575151, #575151), url(img/dessert2.jpg);
-    background-size: 550px;
-    background-position: 0px -65px; }
+#menu-page {
+  /* SPECIALTY CONTAINER */
+  /* MENU CONTAINER */ }
+  #menu-page .specialty-container {
+    position: relative;
+    margin-bottom: 50px;
+    /* SPECIALTIES */ }
+    #menu-page .specialty-container .header {
+      text-align: center; }
+    #menu-page .specialty-container .specialties {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      /* SPECIALTY 1 */
+      /* SPECIALTY 2 */
+      /* SPECIALTY 3 */ }
+      #menu-page .specialty-container .specialties .specialty1 {
+        flex: 1;
+        text-align: center; }
+        #menu-page .specialty-container .specialties .specialty1 .specialty1-image {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          border: 1px solid black; }
+        #menu-page .specialty-container .specialties .specialty1 .specialty1-description {
+          border: 1px solid black;
+          position: relative; }
+      #menu-page .specialty-container .specialties .specialty2 {
+        flex: 2;
+        text-align: center; }
+        #menu-page .specialty-container .specialties .specialty2 .specialty2-image {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          border: 1px solid black; }
+        #menu-page .specialty-container .specialties .specialty2 .specialty2-description {
+          border: 1px solid black;
+          position: relative; }
+      #menu-page .specialty-container .specialties .specialty3 {
+        flex: 1;
+        text-align: center; }
+        #menu-page .specialty-container .specialties .specialty3 .specialty3-image {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          border: 1px solid black; }
+        #menu-page .specialty-container .specialties .specialty3 .specialty3-description {
+          border: 1px solid black;
+          position: relative; }
+  #menu-page .menu-container {
+    position: relative;
+    /* ENTREE CONTAINER */
+    /* APPETIZER CONTAINER */
+    /* DESSERT CONTAINER */ }
+    #menu-page .menu-container .header {
+      text-align: center; }
+    #menu-page .menu-container .menu {
+      position: inherit;
+      display: flex; }
+    #menu-page .menu-container .entree-container {
+      position: inherit;
+      flex: 1;
+      border: 2px solid white;
+      overflow: hidden;
+      background-color: black;
+      /* ENTREES */ }
+      #menu-page .menu-container .entree-container .entrees {
+        /* MENU HEADER */ }
+        #menu-page .menu-container .entree-container .entrees .menu-header {
+          text-align: center;
+          color: white;
+          text-decoration: line-through;
+          z-index: 3; }
+        #menu-page .menu-container .entree-container .entrees img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          position: relative;
+          top: -70px; }
+        #menu-page .menu-container .entree-container .entrees .menu-items {
+          color: white; }
+          #menu-page .menu-container .entree-container .entrees .menu-items li {
+            list-style: none; }
+    #menu-page .menu-container .appetizer-container {
+      flex: 1;
+      border: 2px solid white;
+      overflow: hidden;
+      background: black;
+      /* APPETIZERS */ }
+      #menu-page .menu-container .appetizer-container .appetizers .menu-header {
+        text-align: center;
+        color: white;
+        text-decoration: line-through; }
+      #menu-page .menu-container .appetizer-container .appetizers img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        position: relative;
+        top: -70px; }
+      #menu-page .menu-container .appetizer-container .appetizers .menu-items {
+        color: white; }
+        #menu-page .menu-container .appetizer-container .appetizers .menu-items li {
+          list-style: none; }
+    #menu-page .menu-container .dessert-container {
+      flex: 1;
+      border: 2px solid white;
+      overflow: hidden;
+      background: black;
+      /* DESSERTS */ }
+      #menu-page .menu-container .dessert-container .desserts .menu-header {
+        text-align: center;
+        color: white;
+        text-decoration: line-through; }
+      #menu-page .menu-container .dessert-container .desserts img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        position: relative;
+        top: -70px; }
+      #menu-page .menu-container .dessert-container .desserts .menu-items {
+        color: white; }
+        #menu-page .menu-container .dessert-container .desserts .menu-items li {
+          list-style: none; }
+
+/* MENU PAGE */
 
 /*# sourceMappingURL=main.css.map */

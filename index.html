@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-<section id="homepage">
+<section id="navbar">
    <nav class="navbar content-container">
         <div class="container">
             <div class="navbar-header">
@@ -33,7 +33,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">Reservervations</a></li>
+                        <li><a href="#">RSVP</a></li>
                         <li><a href="#">About Antonio's</a></li>
                     </ul>
                 </div>
@@ -41,8 +41,8 @@
     </nav>
 </section>
 
-<section>
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<section id="homepage">
+    <div id="carousel-example-generic" class="carousel slide content-container" data-ride="carousel">
         <!-- INDICATORS -->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -52,24 +52,29 @@
 
         <!-- WRAPPER 4 SLIDES -->
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="img/carousel1.jpg" alt="...">
+           
+            <div class="item active" id="slide1">
+                <img src="img/homepage.jpg" class="carousel-image">
+                <div class="carousel-caption">
+                    <h3>Tester Text</h3>
+                    <p>Tester text paragraph Tester text paragraph Tester text paragraph.</p>
+                </div>
+            </div>
+            
+            <div class="item" id="slide2">
+                <img src="img/extra1.jpg" class="carousel-image">
+                <div class="carousel-caption">
+                    <h3>Tester Text</h3>
+                    <p>Tester text paragraph tester text paragraph tester text paragraph.</p>
+                </div>
+            </div>
+            
+            <!--<div class="item" id="slide3">
                 <div class="carousel-caption">
                     ...
                 </div>
-            </div>
-            <div class="item">
-                <img src="img/carousel2.jpg" alt="...">
-                <div class="carousel-caption">
-                    ...
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/carousel3.jpg" alt="...">
-                <div class="carousel-caption">
-                    ...
-                </div>
-            </div>
+            </div>-->
+            
         </div>
 
         <!-- CONTROLS -->
@@ -82,8 +87,16 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    
+    <h1>Locally sourced. always fresh.</h1>
+    <br>
+    
+    <div class="">
+        
+    </div>
 </section>
 
+   
     
 <section class="scripts">
     <!-- JQUERY -->

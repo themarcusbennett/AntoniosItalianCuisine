@@ -61,18 +61,46 @@ html body {
         text-decoration: line-through;
     }
     
+    .menu-item {
+        position: relative;
+        list-style: none;
+        color: white;
+        top: 240px;
+    }
+    
     .specialties {
         position: relative;
         display: flex;
         margin-bottom: 50px;
         
-        .specialty {
+        .specialty-pasta {
             flex: 1;
             text-align: center;
             border: 2px solid black;
-            img {
-                width: 300px;
-            }
+            width: 300px;
+            height: 300px;
+            background-image: url(img/pasta1.jpg);
+            background-size: 500px;
+            background-position: -80px -20px;
+        }
+        .specialty-pizza {
+            flex: 1;
+            text-align: center;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            background-image: url(img/pizza1.jpg);
+            background-size: 500px;
+        }
+        .specialty-dessert {
+            flex: 1;
+            text-align: center;
+            border: 2px solid black;
+            width: 300px;
+            height: 300px;
+            background-image: url(img/dessert1.jpg);
+            background-size: 625px;
+            background-position: -10px -155px;
         }
     }
     
@@ -84,7 +112,9 @@ html body {
             flex: 1;
             border: 2px solid black;
             width: 300px;
-            height: 300px;
+            height: 100%;
+            background-color: #575151;
+            background-repeat: no-repeat;
             background-image: url(img/pasta3.jpg);
             background-size: 500px;
             background-position: -32px -312px;
@@ -94,20 +124,26 @@ html body {
             flex: 1;
             border: 2px solid black;
             width: 300px;
-            height: 300px;
-            background-image: url(img/carousel2.jpg);
+            height: 100%;
+            background-color: #575151;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(to bottom, rgba(76,76,76,0) 20%,rgba(44,44,44,7) 54%,rgba(28,28,28,1) 60%,rgba(0,0,0,1) 70%,rgba(19,19,19,1) 99%,rgba(28,28,28,1) 100%), url(img/carousel2.jpg);
             background-size: 550px;
             background-position: -126px -96px;
         }
+       
+        
         
         .desserts {
             flex: 1;
             border: 2px solid black;
             width: 300px;
-            height: 300px;
-            background-image: url(img/dessert2.jpg);
+            height: 100%;
+            //background-color: #575151;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(transparent 10%, #575151, #575151), url(img/dessert2.jpg);
             background-size: 550px;
-            background-position: 5px -65px;
+            background-position: 0px -65px;
         }
     }
 }

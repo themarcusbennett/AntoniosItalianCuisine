@@ -34,16 +34,41 @@ html body {
   text-align: center;
   color: white;
   text-decoration: line-through; }
+#menu .menu-item {
+  position: relative;
+  list-style: none;
+  color: white;
+  top: 240px; }
 #menu .specialties {
   position: relative;
   display: flex;
   margin-bottom: 50px; }
-  #menu .specialties .specialty {
+  #menu .specialties .specialty-pasta {
     flex: 1;
     text-align: center;
-    border: 2px solid black; }
-    #menu .specialties .specialty img {
-      width: 300px; }
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    background-image: url(img/pasta1.jpg);
+    background-size: 500px;
+    background-position: -80px -20px; }
+  #menu .specialties .specialty-pizza {
+    flex: 1;
+    text-align: center;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    background-image: url(img/pizza1.jpg);
+    background-size: 500px; }
+  #menu .specialties .specialty-dessert {
+    flex: 1;
+    text-align: center;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    background-image: url(img/dessert1.jpg);
+    background-size: 625px;
+    background-position: -10px -155px; }
 #menu .menu {
   position: relative;
   display: flex; }
@@ -51,7 +76,9 @@ html body {
     flex: 1;
     border: 2px solid black;
     width: 300px;
-    height: 300px;
+    height: 100%;
+    background-color: #575151;
+    background-repeat: no-repeat;
     background-image: url(img/pasta3.jpg);
     background-size: 500px;
     background-position: -32px -312px; }
@@ -59,17 +86,20 @@ html body {
     flex: 1;
     border: 2px solid black;
     width: 300px;
-    height: 300px;
-    background-image: url(img/carousel2.jpg);
+    height: 100%;
+    background-color: #575151;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, rgba(76, 76, 76, 0) 20%, #2c2c2c 54%, #1c1c1c 60%, black 70%, #131313 99%, #1c1c1c 100%), url(img/carousel2.jpg);
     background-size: 550px;
     background-position: -126px -96px; }
   #menu .menu .desserts {
     flex: 1;
     border: 2px solid black;
     width: 300px;
-    height: 300px;
-    background-image: url(img/dessert2.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent 10%, #575151, #575151), url(img/dessert2.jpg);
     background-size: 550px;
-    background-position: 5px -65px; }
+    background-position: 0px -65px; }
 
 /*# sourceMappingURL=main.css.map */

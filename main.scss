@@ -1,3 +1,29 @@
+/* VARIABLES */ 
+%section-header {
+    
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #97614a;
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: #aca7a8;
+}
+
+%section-header-inverse {
+    
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #aca7a8;
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: #97614a;
+} 
+
+
 html body {
 //    font-family: 'Courgette', cursive;
     font-family: 'Cookie', cursive;
@@ -9,7 +35,6 @@ html body {
     margin-left: 40px;
     margin-right: 40px;
 }
-
 
 #navbar {
     
@@ -52,11 +77,16 @@ html body {
     }
     /* NAVBAR */
 }
-/* ID NAVBAR */
+/* NAVBAR */
+
 #homepage {
     
     #carousel-example-generic {
 
+        .carousel-caption {
+            //color: #aca7a8;
+        }
+        
         #slide1 img {
             width: 100%;
             height: 400px;
@@ -64,27 +94,116 @@ html body {
             object-position: 0px -240px;
         }
 
-            #slide2 img {
-                width: 100%;
-                height: 400px;
-                object-fit: cover;
-                object-position: 0px -248px;
+        #slide2 img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            object-position: 0px -248px;
             }
+        #slide3 img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
     }
 
-    h1 {
+    .slogan h1 {
+        position: relative;
+        width: 600px;
+        left: 50%;
+        transform: translateX(-50%);
         text-align: center;
         text-transform: uppercase;
         color: #97614a;
+        border-top: 3px solid #aca7a8;
+        border-bottom: 3px solid #aca7a8;
+        
     }
-    br {
-        //width: 50%;
+    
+    .menu-preview {
+        
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        //flex-direction: column;
+        
+        .menu-item1::hover {
+            background-color: rgba(255, 0, 0, 0.55);
+        }
+        
+        .menu-item1 {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            //margin: auto 20px;
+        }
+        .menu-item2 {
+            width: 350px;
+            height: 350px;
+            object-fit: cover; 
+            //margin: auto 20px;
+        }
+        .menu-item3 {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            //margin: auto 20px;
+        }
+    }
+    /* MENU PREVIEW */
+    
+    .section-header {
+        @extend %section-header;
     }
 }
+/* HOMEPAGE */
+
+#gallery {
+    margin-bottom: 50px;
+    
+    .section-header {
+        
+        @extend %section-header;
+    }
+    
+    .image-gallery-container {
+        position: relative;
+        display: grid;
+        justify-content: space-around;
+        
+        .row1 {
+            display: flex;
+        }
+        
+        .row2 {
+            display: flex;
+        }
+        .gallery-photo img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+}
+/* GALLERY */
+
+#footer {
+    
+    .footer-hr {
+        width: 75%;
+    }
+    
+    footer {
+        background-color: white;
+    }
+}
+/* FOOTER */
+
+
 
 /* //MENU.HTML// */
-#navigation {
-    background: #575151;
+#navbar {
+    //background: #575151;
     
     .navbar {
         font-size: 18px;
@@ -94,7 +213,7 @@ html body {
         }
         
         a {
-            color: white;
+            //color: white;
         }
     }
 }
@@ -103,68 +222,78 @@ html body {
     
     .specialty-container {
         position: relative;
+        width: 100%;
         margin-bottom: 50px;
         
-        .header {
-            text-align: center;
+        #section-header {
+            @extend %section-header;
         }
     
         .specialties {
             position: relative;
-            display: flex;
-            justify-content: space-between;
 
             .specialty1 {
-                flex: 1;
-                text-align: center;
+                display: inline-block;
+                position: relative;
 
                 .specialty1-image {
-                    width: 100%;
-                    height: 300px;
+                    height: 350px;
                     object-fit: cover;
-                    border: 1px solid black;
+                    padding: 0;
+                    border: 2px solid white;
+                }
+                
+                .specialty1-description-container {
+                    position: relative;
+                    .specialty1-description {
+                        position: absolute;
+                        //left: 50%;
+                        top: 50%;
+                        //transform: translateY(-50%);
+                        color: #aca7a8;
+                        text-align: center;
+                        border: 2px solid white;
+                        align-self: center;
+                    }
+                    
                 }
 
-                .specialty1-description {
-                    border: 1px solid black;
-                    position: relative;
-                }
 
             }
             /* SPECIALTY 1 */
 
             .specialty2 {
-                flex: 2;
-                text-align: center;
-
+                display: inline-block;
+                
                 .specialty2-image {
-                    width: 100%;
-                    height: 300px;
+                    height: 350px;
                     object-fit: cover;
-                    border: 1px solid black;
+                    padding: 0;
+                    border: 2px solid white;
                 }
 
                 .specialty2-description {
-                    border: 1px solid black;
                     position: relative;
+                    color: #aca7a8;
+                    text-align: center;
+                    border: 2px solid white;
                 }
             }
             /* SPECIALTY 2 */
             
             .specialty3 {
-                flex: 1;
-                text-align: center;
-
+                
                 .specialty3-image {
-                    width: 100%;
-                    height: 300px;
+                    height: 350px;
                     object-fit: cover;
-                    border: 1px solid black;
+                    padding: 0;
+                    border: 2px solid white;
                 }
 
                 .specialty3-description {
-                    border: 1px solid black;
-                    position: relative;
+                    color: #aca7a8;
+                    text-align: center;
+                    border: 2px solid white;
                 }
             }
             /* SPECIALTY 3 */
@@ -177,44 +306,60 @@ html body {
     
     .menu-container {
         position: relative;
+        display: inline-block;
+        width: 100%;
         
-        .header {
-            text-align: center;
+        .section-header {
+            @extend %section-header;
         }
         
         .menu {
             position: inherit;
             display: flex;
+            justify-content: space-around;
         }
         
         .entree-container {
             position: inherit;
-            flex: 1;
-            border: 2px solid white;
+            //border: 2px solid #aca7a8;
             overflow: hidden;
-            background-color: black;
+            background: black;
+            width: 375px;
             
             .entrees {
                 
                 .menu-header {
-                    text-align: center;
-                    color: white;
-                    text-decoration: line-through;
-                    z-index: 3;
+                    @extend %section-header-inverse;
+                    position: relative;
+                    display: flex;
+                    background-image: url(img/food1.jpg);
+                    background-size: 600px;
+                    background-position: -155px -50px;
+                    height: 300px;
+                    margin: 0;
+                    
+                    .image-overlay {
+                        background: rgba(0, 0, 0, 0.55);
+                        margin: 0;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0px;
+                    }
+                    
+                    h2 {
+                        margin: 0;
+                        z-index: 1;
+                        width: 100%;
+                        text-align: center;
+                    }
                 }
                 /* MENU HEADER */
                 
-                img {
-                    width: 100%;
-                    height: 300px;
-                    object-fit: cover;
-                    //z-index: -1;
-                    position: relative;
-                    top: -70px;
-                }
-                
                 .menu-items {
-                    color: white;
+                    color: #aca7a8;
+                    padding: 10px;
+                    
                     li {
                         list-style: none;
                     }
@@ -225,18 +370,41 @@ html body {
         /* ENTREE CONTAINER */
         
         .appetizer-container {
-            flex: 1;
-            border: 2px solid white;
+            position: inherit;
+            //border: 2px solid #aca7a8;
             overflow: hidden;
+            width: 375px;
             background: black;
-            //z-index: -2;
+            
+            
             
             .appetizers {
                 
                 .menu-header {
-                    text-align: center;
-                    color: white;
-                    text-decoration: line-through;
+                    @extend %section-header-inverse;
+                    position: relative;
+                    display: flex;
+                    background-image: url(img/food4.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 300px;
+                    margin: 0;
+                    
+                    h2 {
+                        margin: 0;
+                        text-align: center;
+                        width: 100%;
+                        z-index: 1;
+                    }
+                    
+                    .image-overlay {
+                        background: rgba(0, 0, 0, 0.55);
+                        margin: 0;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0px;
+                    }
                 }
                 
                 img {
@@ -249,7 +417,9 @@ html body {
                 }
                 
                 .menu-items {
-                    color: white;
+                    color: #aca7a8;
+                    padding: 10px;
+                    
                     li {
                         list-style: none;
                     }
@@ -260,18 +430,40 @@ html body {
         /* APPETIZER CONTAINER */
        
         .dessert-container {
-            flex: 1;
-            border: 2px solid white;
+            position: inherit;
+            //border: 2px solid #aca7a8;
             overflow: hidden;
             background: black;
-            //z-index: -2;
+            width: 375px;
             
             .desserts {
                 
                 .menu-header {
-                    text-align: center;
-                    color: white;
-                    text-decoration: line-through;
+                    @extend %section-header-inverse;
+                    position: relative;
+                    display: flex;
+                    background-image: url(img/food3.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    height: 300px;
+                    margin: 0;
+                    
+                    .image-overlay {
+                        background: rgba(0, 0, 0, 0.55);
+                        margin: 0;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0px;
+                    }
+                    
+                    h2 {
+                        margin: 0;
+                        text-align: center;
+                        width: 100%;
+                        z-index: 1;
+                    }
+                    
                 }
                 
                 img {
@@ -284,7 +476,9 @@ html body {
                 }
                 
                 .menu-items {
-                    color: white;
+                    color: #aca7a8;
+                    padding: 10px;
+                    
                     li {
                         list-style: none;
                     }
@@ -293,7 +487,10 @@ html body {
             /* DESSERTS */
         } 
         /* DESSERT CONTAINER */
+        
     }
     /* MENU CONTAINER */
 }
 /* MENU PAGE */
+
+/* GALLERY */

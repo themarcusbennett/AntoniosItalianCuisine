@@ -1,3 +1,24 @@
+/* VARIABLES */
+#homepage .section-header, #gallery .section-header, #menu-page .specialty-container #section-header, #menu-page .menu-container .section-header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #97614a;
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-color: #aca7a8; }
+
+#menu-page .menu-container .entree-container .entrees .menu-header, #menu-page .menu-container .appetizer-container .appetizers .menu-header, #menu-page .menu-container .dessert-container .desserts .menu-header {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #aca7a8;
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-color: #97614a; }
+
 html body {
   font-family: 'Cookie', cursive;
   font-family: 'Cormorant Unicase', serif;
@@ -33,125 +54,202 @@ html body {
     #navbar .navbar a {
       color: #97614a; }
 
-/* ID NAVBAR */
-#homepage #carousel-example-generic #slide1 img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: 0px -240px; }
-#homepage #carousel-example-generic #slide2 img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: 0px -248px; }
-#homepage h1 {
-  text-align: center;
-  text-transform: uppercase;
-  color: #97614a; }
+/* NAVBAR */
+#homepage {
+  /* MENU PREVIEW */ }
+  #homepage #carousel-example-generic #slide1 img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 0px -240px; }
+  #homepage #carousel-example-generic #slide2 img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 0px -248px; }
+  #homepage #carousel-example-generic #slide3 img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; }
+  #homepage .slogan h1 {
+    position: relative;
+    width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #97614a;
+    border-top: 3px solid #aca7a8;
+    border-bottom: 3px solid #aca7a8; }
+  #homepage .menu-preview {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap; }
+    #homepage .menu-preview .menu-item1::hover {
+      background-color: rgba(255, 0, 0, 0.55); }
+    #homepage .menu-preview .menu-item1 {
+      width: 350px;
+      height: 350px;
+      object-fit: cover; }
+    #homepage .menu-preview .menu-item2 {
+      width: 350px;
+      height: 350px;
+      object-fit: cover; }
+    #homepage .menu-preview .menu-item3 {
+      width: 350px;
+      height: 350px;
+      object-fit: cover; }
 
+/* HOMEPAGE */
+#gallery {
+  margin-bottom: 50px; }
+  #gallery .image-gallery-container {
+    position: relative;
+    display: grid;
+    justify-content: space-around; }
+    #gallery .image-gallery-container .row1 {
+      display: flex; }
+    #gallery .image-gallery-container .row2 {
+      display: flex; }
+    #gallery .image-gallery-container .gallery-photo img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover; }
+
+/* GALLERY */
+#footer .footer-hr {
+  width: 75%; }
+#footer footer {
+  background-color: white; }
+
+/* FOOTER */
 /* //MENU.HTML// */
-#navigation {
-  background: #575151; }
-  #navigation .navbar {
-    font-size: 18px; }
-    #navigation .navbar .navbar-brand {
-      font-size: 24px; }
-    #navigation .navbar a {
-      color: white; }
+#navbar .navbar {
+  font-size: 18px; }
+  #navbar .navbar .navbar-brand {
+    font-size: 24px; }
 
 #menu-page {
   /* SPECIALTY CONTAINER */
   /* MENU CONTAINER */ }
   #menu-page .specialty-container {
     position: relative;
+    width: 100%;
     margin-bottom: 50px;
     /* SPECIALTIES */ }
-    #menu-page .specialty-container .header {
-      text-align: center; }
     #menu-page .specialty-container .specialties {
       position: relative;
-      display: flex;
-      justify-content: space-between;
       /* SPECIALTY 1 */
       /* SPECIALTY 2 */
       /* SPECIALTY 3 */ }
       #menu-page .specialty-container .specialties .specialty1 {
-        flex: 1;
-        text-align: center; }
+        display: inline-block;
+        position: relative; }
         #menu-page .specialty-container .specialties .specialty1 .specialty1-image {
-          width: 100%;
-          height: 300px;
+          height: 350px;
           object-fit: cover;
-          border: 1px solid black; }
-        #menu-page .specialty-container .specialties .specialty1 .specialty1-description {
-          border: 1px solid black;
+          padding: 0;
+          border: 2px solid white; }
+        #menu-page .specialty-container .specialties .specialty1 .specialty1-description-container {
           position: relative; }
+          #menu-page .specialty-container .specialties .specialty1 .specialty1-description-container .specialty1-description {
+            position: absolute;
+            top: 50%;
+            color: #aca7a8;
+            text-align: center;
+            border: 2px solid white;
+            align-self: center; }
       #menu-page .specialty-container .specialties .specialty2 {
-        flex: 2;
-        text-align: center; }
+        display: inline-block; }
         #menu-page .specialty-container .specialties .specialty2 .specialty2-image {
-          width: 100%;
-          height: 300px;
+          height: 350px;
           object-fit: cover;
-          border: 1px solid black; }
+          padding: 0;
+          border: 2px solid white; }
         #menu-page .specialty-container .specialties .specialty2 .specialty2-description {
-          border: 1px solid black;
-          position: relative; }
-      #menu-page .specialty-container .specialties .specialty3 {
-        flex: 1;
-        text-align: center; }
-        #menu-page .specialty-container .specialties .specialty3 .specialty3-image {
-          width: 100%;
-          height: 300px;
-          object-fit: cover;
-          border: 1px solid black; }
-        #menu-page .specialty-container .specialties .specialty3 .specialty3-description {
-          border: 1px solid black;
-          position: relative; }
+          position: relative;
+          color: #aca7a8;
+          text-align: center;
+          border: 2px solid white; }
+      #menu-page .specialty-container .specialties .specialty3 .specialty3-image {
+        height: 350px;
+        object-fit: cover;
+        padding: 0;
+        border: 2px solid white; }
+      #menu-page .specialty-container .specialties .specialty3 .specialty3-description {
+        color: #aca7a8;
+        text-align: center;
+        border: 2px solid white; }
   #menu-page .menu-container {
     position: relative;
+    display: inline-block;
+    width: 100%;
     /* ENTREE CONTAINER */
     /* APPETIZER CONTAINER */
     /* DESSERT CONTAINER */ }
-    #menu-page .menu-container .header {
-      text-align: center; }
     #menu-page .menu-container .menu {
       position: inherit;
-      display: flex; }
+      display: flex;
+      justify-content: space-around; }
     #menu-page .menu-container .entree-container {
       position: inherit;
-      flex: 1;
-      border: 2px solid white;
       overflow: hidden;
-      background-color: black;
+      background: black;
+      width: 375px;
       /* ENTREES */ }
       #menu-page .menu-container .entree-container .entrees {
         /* MENU HEADER */ }
         #menu-page .menu-container .entree-container .entrees .menu-header {
-          text-align: center;
-          color: white;
-          text-decoration: line-through;
-          z-index: 3; }
-        #menu-page .menu-container .entree-container .entrees img {
-          width: 100%;
-          height: 300px;
-          object-fit: cover;
           position: relative;
-          top: -70px; }
+          display: flex;
+          background-image: url(img/food1.jpg);
+          background-size: 600px;
+          background-position: -155px -50px;
+          height: 300px;
+          margin: 0; }
+          #menu-page .menu-container .entree-container .entrees .menu-header .image-overlay {
+            background: rgba(0, 0, 0, 0.55);
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px; }
+          #menu-page .menu-container .entree-container .entrees .menu-header h2 {
+            margin: 0;
+            z-index: 1;
+            width: 100%;
+            text-align: center; }
         #menu-page .menu-container .entree-container .entrees .menu-items {
-          color: white; }
+          color: #aca7a8;
+          padding: 10px; }
           #menu-page .menu-container .entree-container .entrees .menu-items li {
             list-style: none; }
     #menu-page .menu-container .appetizer-container {
-      flex: 1;
-      border: 2px solid white;
+      position: inherit;
       overflow: hidden;
+      width: 375px;
       background: black;
       /* APPETIZERS */ }
       #menu-page .menu-container .appetizer-container .appetizers .menu-header {
-        text-align: center;
-        color: white;
-        text-decoration: line-through; }
+        position: relative;
+        display: flex;
+        background-image: url(img/food4.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        margin: 0; }
+        #menu-page .menu-container .appetizer-container .appetizers .menu-header h2 {
+          margin: 0;
+          text-align: center;
+          width: 100%;
+          z-index: 1; }
+        #menu-page .menu-container .appetizer-container .appetizers .menu-header .image-overlay {
+          background: rgba(0, 0, 0, 0.55);
+          margin: 0;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0px; }
       #menu-page .menu-container .appetizer-container .appetizers img {
         width: 100%;
         height: 300px;
@@ -159,19 +257,36 @@ html body {
         position: relative;
         top: -70px; }
       #menu-page .menu-container .appetizer-container .appetizers .menu-items {
-        color: white; }
+        color: #aca7a8;
+        padding: 10px; }
         #menu-page .menu-container .appetizer-container .appetizers .menu-items li {
           list-style: none; }
     #menu-page .menu-container .dessert-container {
-      flex: 1;
-      border: 2px solid white;
+      position: inherit;
       overflow: hidden;
       background: black;
+      width: 375px;
       /* DESSERTS */ }
       #menu-page .menu-container .dessert-container .desserts .menu-header {
-        text-align: center;
-        color: white;
-        text-decoration: line-through; }
+        position: relative;
+        display: flex;
+        background-image: url(img/food3.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        margin: 0; }
+        #menu-page .menu-container .dessert-container .desserts .menu-header .image-overlay {
+          background: rgba(0, 0, 0, 0.55);
+          margin: 0;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0px; }
+        #menu-page .menu-container .dessert-container .desserts .menu-header h2 {
+          margin: 0;
+          text-align: center;
+          width: 100%;
+          z-index: 1; }
       #menu-page .menu-container .dessert-container .desserts img {
         width: 100%;
         height: 300px;
@@ -179,10 +294,12 @@ html body {
         position: relative;
         top: -70px; }
       #menu-page .menu-container .dessert-container .desserts .menu-items {
-        color: white; }
+        color: #aca7a8;
+        padding: 10px; }
         #menu-page .menu-container .dessert-container .desserts .menu-items li {
           list-style: none; }
 
 /* MENU PAGE */
+/* GALLERY */
 
 /*# sourceMappingURL=main.css.map */

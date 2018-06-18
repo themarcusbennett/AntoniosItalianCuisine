@@ -20,7 +20,6 @@
   text-decoration-color: #97614a; }
 
 html body {
-  font-family: 'Cookie', cursive;
   font-family: 'Cormorant Unicase', serif;
   background: #1d1d1d; }
 
@@ -180,10 +179,9 @@ html body {
       justify-content: space-around; }
     #menu-page .menu-container .entree-container {
       position: inherit;
-      border: 2px solid white;
       overflow: hidden;
       background: black;
-      width: 375px;
+      width: 400px;
       /* ENTREES */ }
       #menu-page .menu-container .entree-container .entrees {
         /* MENU HEADER */ }
@@ -194,8 +192,7 @@ html body {
           background-size: 600px;
           background-position: -155px -50px;
           height: 300px;
-          margin: 0;
-          border-bottom: 2px solid white; }
+          margin: 0; }
           #menu-page .menu-container .entree-container .entrees .menu-header .image-overlay {
             background: rgba(0, 0, 0, 0.35);
             margin: 0;
@@ -213,14 +210,17 @@ html body {
           #menu-page .menu-container .entree-container .entrees .menu-items li {
             list-style: none;
             color: #d1d1d1; }
-            #menu-page .menu-container .entree-container .entrees .menu-items li h3 {
-              color: #97614a; }
+            #menu-page .menu-container .entree-container .entrees .menu-items li h4 {
+              color: #a3a3a3;
+              text-transform: uppercase; }
+              #menu-page .menu-container .entree-container .entrees .menu-items li h4 .total {
+                color: #97614a; }
             #menu-page .menu-container .entree-container .entrees .menu-items li p {
               font-size: 16px; }
     #menu-page .menu-container .appetizer-container {
       position: inherit;
       overflow: hidden;
-      width: 375px;
+      width: 400px;
       background: black;
       /* APPETIZERS */ }
       #menu-page .menu-container .appetizer-container .appetizers .menu-header {
@@ -254,15 +254,18 @@ html body {
         #menu-page .menu-container .appetizer-container .appetizers .menu-items li {
           list-style: none;
           color: #d1d1d1; }
-          #menu-page .menu-container .appetizer-container .appetizers .menu-items li h3 {
-            color: #97614a; }
+          #menu-page .menu-container .appetizer-container .appetizers .menu-items li h4 {
+            color: #a3a3a3;
+            text-transform: uppercase; }
+            #menu-page .menu-container .appetizer-container .appetizers .menu-items li h4 .total {
+              color: #97614a; }
           #menu-page .menu-container .appetizer-container .appetizers .menu-items li p {
             font-size: 16px; }
     #menu-page .menu-container .dessert-container {
       position: inherit;
       overflow: hidden;
       background: black;
-      width: 375px;
+      width: 400px;
       /* DESSERTS */ }
       #menu-page .menu-container .dessert-container .desserts .menu-header {
         position: relative;
@@ -295,8 +298,11 @@ html body {
         #menu-page .menu-container .dessert-container .desserts .menu-items li {
           list-style: none;
           color: #d1d1d1; }
-          #menu-page .menu-container .dessert-container .desserts .menu-items li h3 {
-            color: #97614a; }
+          #menu-page .menu-container .dessert-container .desserts .menu-items li h4 {
+            color: #a3a3a3;
+            text-transform: uppercase; }
+            #menu-page .menu-container .dessert-container .desserts .menu-items li h4 .total {
+              color: #97614a; }
           #menu-page .menu-container .dessert-container .desserts .menu-items li p {
             font-size: 16px; }
 

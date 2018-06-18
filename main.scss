@@ -25,8 +25,6 @@
 
 
 html body {
-//    font-family: 'Courgette', cursive;
-    font-family: 'Cookie', cursive;
     font-family: 'Cormorant Unicase', serif;
     background: #1d1d1d;
 }
@@ -271,8 +269,7 @@ html body {
         }
     /* SPECIALTY CONTAINER */
     }
-    
-    
+       
     .menu-container {
         position: relative;
         display: inline-block;
@@ -290,10 +287,9 @@ html body {
         
         .entree-container {
             position: inherit;
-            border: 2px solid white;
             overflow: hidden;
             background: black;
-            width: 375px;
+            width: 400px;
             
             .entrees {
                 
@@ -306,8 +302,6 @@ html body {
                     background-position: -155px -50px;
                     height: 300px;
                     margin: 0;
-                    border-bottom: 2px solid white;
-                    
                     
                     .image-overlay {
                         background: rgba(0, 0, 0, 0.35);
@@ -334,8 +328,13 @@ html body {
                         list-style: none;
                         color: #d1d1d1;
                         
-                        h3 {
-                            color: #97614a;
+                        h4 {
+                            color: #a3a3a3;
+                            text-transform: uppercase;
+                            
+                            .total {
+                                color: #97614a;
+                            }
                         }
                         
                         p {
@@ -352,7 +351,7 @@ html body {
             position: inherit;
             //border: 2px solid #aca7a8;
             overflow: hidden;
-            width: 375px;
+            width: 400px;
             background: black;
             
             
@@ -402,8 +401,13 @@ html body {
                         list-style: none;
                         color: #d1d1d1;
                         
-                        h3 {
-                            color: #97614a;
+                        h4 {
+                            color: #a3a3a3;
+                            text-transform: uppercase;
+                            
+                            .total {
+                                color: #97614a;
+                            }
                         }
                         
                         p {
@@ -421,7 +425,7 @@ html body {
             //border: 2px solid #aca7a8;
             overflow: hidden;
             background: black;
-            width: 375px;
+            width: 400px;
             
             .desserts {
                 
@@ -469,8 +473,13 @@ html body {
                         list-style: none;
                         color: #d1d1d1;
                         
-                        h3 {
-                            color: #97614a;
+                        h4 {
+                            color: #a3a3a3;
+                            text-transform: uppercase;
+                            
+                            .total {
+                                color: #97614a;
+                            }
                         }
                         
                         p {

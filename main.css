@@ -14,7 +14,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   text-transform: uppercase;
-  color: #aca7a8;
+  color: #ffffff;
   text-decoration-line: line-through;
   text-decoration-style: solid;
   text-decoration-color: #97614a; }
@@ -130,56 +130,43 @@ html body {
     font-size: 24px; }
 
 #menu-page {
-  /* SPECIALTY CONTAINER */
   /* MENU CONTAINER */ }
-  #menu-page .specialty-container {
-    position: relative;
+  #menu-page .table {
     width: 100%;
-    margin-bottom: 50px;
-    /* SPECIALTIES */ }
-    #menu-page .specialty-container .specialties {
+    /*td:nth-of-type(2n) {
+        background: white;
+    }*/ }
+    #menu-page .table td {
+      width: 50%;
+      height: 100%;
+      border-top: none;
       position: relative;
-      /* SPECIALTY 1 */
-      /* SPECIALTY 2 */
-      /* SPECIALTY 3 */ }
-      #menu-page .specialty-container .specialties .specialty1 {
-        display: inline-block;
-        position: relative; }
-        #menu-page .specialty-container .specialties .specialty1 .specialty1-image {
-          height: 350px;
-          object-fit: cover;
-          padding: 0;
-          border: 2px solid white; }
-        #menu-page .specialty-container .specialties .specialty1 .specialty1-description-container {
-          position: relative; }
-          #menu-page .specialty-container .specialties .specialty1 .specialty1-description-container .specialty1-description {
-            position: absolute;
-            top: 50%;
-            color: #aca7a8;
-            text-align: center;
-            border: 2px solid white;
-            align-self: center; }
-      #menu-page .specialty-container .specialties .specialty2 {
-        display: inline-block; }
-        #menu-page .specialty-container .specialties .specialty2 .specialty2-image {
-          height: 350px;
-          object-fit: cover;
-          padding: 0;
-          border: 2px solid white; }
-        #menu-page .specialty-container .specialties .specialty2 .specialty2-description {
-          position: relative;
-          color: #aca7a8;
-          text-align: center;
-          border: 2px solid white; }
-      #menu-page .specialty-container .specialties .specialty3 .specialty3-image {
+      padding: 0; }
+      #menu-page .table td div {
+        text-align: center;
+        color: #aca7a8;
+        width: 50%;
+        height: 50%;
+        overflow: auto;
+        margin: auto;
+        position: absolute;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; }
+      #menu-page .table td img {
+        width: 100%;
         height: 350px;
         object-fit: cover;
         padding: 0;
         border: 2px solid white; }
-      #menu-page .specialty-container .specialties .specialty3 .specialty3-description {
-        color: #aca7a8;
-        text-align: center;
-        border: 2px solid white; }
+  #menu-page .specialty-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    /* SPECIALTY CONTAINER */ }
   #menu-page .menu-container {
     position: relative;
     display: inline-block;
@@ -193,6 +180,7 @@ html body {
       justify-content: space-around; }
     #menu-page .menu-container .entree-container {
       position: inherit;
+      border: 2px solid white;
       overflow: hidden;
       background: black;
       width: 375px;
@@ -206,24 +194,29 @@ html body {
           background-size: 600px;
           background-position: -155px -50px;
           height: 300px;
-          margin: 0; }
+          margin: 0;
+          border-bottom: 2px solid white; }
           #menu-page .menu-container .entree-container .entrees .menu-header .image-overlay {
-            background: rgba(0, 0, 0, 0.55);
+            background: rgba(0, 0, 0, 0.35);
             margin: 0;
             height: 100%;
             width: 100%;
             position: absolute;
             top: 0px; }
           #menu-page .menu-container .entree-container .entrees .menu-header h2 {
-            margin: 0;
+            margin: 20px;
             z-index: 1;
             width: 100%;
             text-align: center; }
         #menu-page .menu-container .entree-container .entrees .menu-items {
-          color: #aca7a8;
           padding: 10px; }
           #menu-page .menu-container .entree-container .entrees .menu-items li {
-            list-style: none; }
+            list-style: none;
+            color: #d1d1d1; }
+            #menu-page .menu-container .entree-container .entrees .menu-items li h3 {
+              color: #97614a; }
+            #menu-page .menu-container .entree-container .entrees .menu-items li p {
+              font-size: 16px; }
     #menu-page .menu-container .appetizer-container {
       position: inherit;
       overflow: hidden;
@@ -239,12 +232,12 @@ html body {
         height: 300px;
         margin: 0; }
         #menu-page .menu-container .appetizer-container .appetizers .menu-header h2 {
-          margin: 0;
+          margin: 20px;
           text-align: center;
           width: 100%;
           z-index: 1; }
         #menu-page .menu-container .appetizer-container .appetizers .menu-header .image-overlay {
-          background: rgba(0, 0, 0, 0.55);
+          background: rgba(0, 0, 0, 0.35);
           margin: 0;
           height: 100%;
           width: 100%;
@@ -257,10 +250,14 @@ html body {
         position: relative;
         top: -70px; }
       #menu-page .menu-container .appetizer-container .appetizers .menu-items {
-        color: #aca7a8;
         padding: 10px; }
         #menu-page .menu-container .appetizer-container .appetizers .menu-items li {
-          list-style: none; }
+          list-style: none;
+          color: #d1d1d1; }
+          #menu-page .menu-container .appetizer-container .appetizers .menu-items li h3 {
+            color: #97614a; }
+          #menu-page .menu-container .appetizer-container .appetizers .menu-items li p {
+            font-size: 16px; }
     #menu-page .menu-container .dessert-container {
       position: inherit;
       overflow: hidden;
@@ -276,14 +273,14 @@ html body {
         height: 300px;
         margin: 0; }
         #menu-page .menu-container .dessert-container .desserts .menu-header .image-overlay {
-          background: rgba(0, 0, 0, 0.55);
+          background: rgba(0, 0, 0, 0.35);
           margin: 0;
           height: 100%;
           width: 100%;
           position: absolute;
           top: 0px; }
         #menu-page .menu-container .dessert-container .desserts .menu-header h2 {
-          margin: 0;
+          margin: 20px;
           text-align: center;
           width: 100%;
           z-index: 1; }
@@ -294,10 +291,14 @@ html body {
         position: relative;
         top: -70px; }
       #menu-page .menu-container .dessert-container .desserts .menu-items {
-        color: #aca7a8;
         padding: 10px; }
         #menu-page .menu-container .dessert-container .desserts .menu-items li {
-          list-style: none; }
+          list-style: none;
+          color: #d1d1d1; }
+          #menu-page .menu-container .dessert-container .desserts .menu-items li h3 {
+            color: #97614a; }
+          #menu-page .menu-container .dessert-container .desserts .menu-items li p {
+            font-size: 16px; }
 
 /* MENU PAGE */
 /* GALLERY */

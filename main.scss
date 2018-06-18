@@ -17,7 +17,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
     text-transform: uppercase;
-    color: #aca7a8;
+    color: #ffffff;
     text-decoration-line: line-through;
     text-decoration-style: solid;
     text-decoration-color: #97614a;
@@ -220,6 +220,47 @@ html body {
 
 #menu-page {
     
+    .table {
+        width: 100%;
+        
+        /*td:nth-of-type(2n) {
+            background: white;
+        }*/
+        
+        td {
+            width: 50%;
+            height: 100%;
+            border-top: none;
+            position: relative;
+            padding: 0;
+            
+            div {
+                text-align: center;
+                color: #aca7a8;
+                width: 50%;
+                height: 50%;
+                overflow: auto;
+                margin: auto;
+                position: absolute;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+            }
+            
+            img {
+                width: 100%;
+                height: 350px;
+                object-fit: cover;
+                padding: 0;
+                border: 2px solid white;
+            }
+        }
+        
+    }
+    
     .specialty-container {
         position: relative;
         width: 100%;
@@ -228,80 +269,8 @@ html body {
         #section-header {
             @extend %section-header;
         }
-    
-        .specialties {
-            position: relative;
-
-            .specialty1 {
-                display: inline-block;
-                position: relative;
-
-                .specialty1-image {
-                    height: 350px;
-                    object-fit: cover;
-                    padding: 0;
-                    border: 2px solid white;
-                }
-                
-                .specialty1-description-container {
-                    position: relative;
-                    .specialty1-description {
-                        position: absolute;
-                        //left: 50%;
-                        top: 50%;
-                        //transform: translateY(-50%);
-                        color: #aca7a8;
-                        text-align: center;
-                        border: 2px solid white;
-                        align-self: center;
-                    }
-                    
-                }
-
-
-            }
-            /* SPECIALTY 1 */
-
-            .specialty2 {
-                display: inline-block;
-                
-                .specialty2-image {
-                    height: 350px;
-                    object-fit: cover;
-                    padding: 0;
-                    border: 2px solid white;
-                }
-
-                .specialty2-description {
-                    position: relative;
-                    color: #aca7a8;
-                    text-align: center;
-                    border: 2px solid white;
-                }
-            }
-            /* SPECIALTY 2 */
-            
-            .specialty3 {
-                
-                .specialty3-image {
-                    height: 350px;
-                    object-fit: cover;
-                    padding: 0;
-                    border: 2px solid white;
-                }
-
-                .specialty3-description {
-                    color: #aca7a8;
-                    text-align: center;
-                    border: 2px solid white;
-                }
-            }
-            /* SPECIALTY 3 */
-        }
-        /* SPECIALTIES */
-    }
     /* SPECIALTY CONTAINER */
-    
+    }
     
     
     .menu-container {
@@ -321,7 +290,7 @@ html body {
         
         .entree-container {
             position: inherit;
-            //border: 2px solid #aca7a8;
+            border: 2px solid white;
             overflow: hidden;
             background: black;
             width: 375px;
@@ -337,9 +306,11 @@ html body {
                     background-position: -155px -50px;
                     height: 300px;
                     margin: 0;
+                    border-bottom: 2px solid white;
+                    
                     
                     .image-overlay {
-                        background: rgba(0, 0, 0, 0.55);
+                        background: rgba(0, 0, 0, 0.35);
                         margin: 0;
                         height: 100%;
                         width: 100%;
@@ -348,7 +319,7 @@ html body {
                     }
                     
                     h2 {
-                        margin: 0;
+                        margin: 20px;
                         z-index: 1;
                         width: 100%;
                         text-align: center;
@@ -357,11 +328,19 @@ html body {
                 /* MENU HEADER */
                 
                 .menu-items {
-                    color: #aca7a8;
                     padding: 10px;
                     
                     li {
                         list-style: none;
+                        color: #d1d1d1;
+                        
+                        h3 {
+                            color: #97614a;
+                        }
+                        
+                        p {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -391,14 +370,14 @@ html body {
                     margin: 0;
                     
                     h2 {
-                        margin: 0;
+                        margin: 20px;
                         text-align: center;
                         width: 100%;
                         z-index: 1;
                     }
                     
                     .image-overlay {
-                        background: rgba(0, 0, 0, 0.55);
+                        background: rgba(0, 0, 0, 0.35);
                         margin: 0;
                         height: 100%;
                         width: 100%;
@@ -417,11 +396,19 @@ html body {
                 }
                 
                 .menu-items {
-                    color: #aca7a8;
                     padding: 10px;
                     
                     li {
                         list-style: none;
+                        color: #d1d1d1;
+                        
+                        h3 {
+                            color: #97614a;
+                        }
+                        
+                        p {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -449,7 +436,7 @@ html body {
                     margin: 0;
                     
                     .image-overlay {
-                        background: rgba(0, 0, 0, 0.55);
+                        background: rgba(0, 0, 0, 0.35);
                         margin: 0;
                         height: 100%;
                         width: 100%;
@@ -458,7 +445,7 @@ html body {
                     }
                     
                     h2 {
-                        margin: 0;
+                        margin: 20px;
                         text-align: center;
                         width: 100%;
                         z-index: 1;
@@ -476,11 +463,19 @@ html body {
                 }
                 
                 .menu-items {
-                    color: #aca7a8;
                     padding: 10px;
                     
                     li {
                         list-style: none;
+                        color: #d1d1d1;
+                        
+                        h3 {
+                            color: #97614a;
+                        }
+                        
+                        p {
+                            font-size: 16px;
+                        }
                     }
                 }
             }

@@ -64,6 +64,15 @@ html body {
         margin-top: 50px;
         margin-bottom: 50px;
         
+        .navbar-header {
+            border-bottom: 1px solid #97614a;
+            width: 126px;
+            
+            .icon-bar {
+                background: #97614a;
+            }
+        }
+        
         .navbar-brand {
             font-size: 24px;
             text-transform: uppercase;
@@ -108,23 +117,73 @@ html body {
             //color: #aca7a8;
         }
         
-        #slide1 img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;            
-            object-position: 0px -240px;
-        }
-
-        #slide2 img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            object-position: 0px -248px;
+        #slide1 {
+            
+            img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;            
+                object-position: 0px -240px;
             }
-        #slide3 img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
+            
+            p {
+                position: absolute;
+                display: inline-table;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                text-align: center;
+                color: black;
+                background: white;
+                font-size: 16px;
+                padding: 0 10px;
+            }
+        }
+        
+
+        #slide2 {
+            
+            img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                object-position: 0px -248px;
+            }
+            
+            p {
+                position: absolute;
+                display: inline-table;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                text-align: center;
+                color: black;
+                background: white;
+                font-size: 16px;
+                padding: 0 10px;
+            }
+        }
+        
+        #slide3 {
+            
+            img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+            }
+            
+            p {
+                position: absolute;
+                display: inline-table;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                text-align: center;
+                color: black;
+                background: white;
+                font-size: 16px;
+                padding: 0 10px;
+            }
         }
     }
 
@@ -148,8 +207,8 @@ html body {
         flex-flow: row wrap;
         //flex-direction: column;
         
-        .menu-item1::hover {
-            background-color: rgba(255, 0, 0, 0.55);
+        .menu-item1:hover {
+            background-size: 110%;
         }
         
         .menu-item1 {

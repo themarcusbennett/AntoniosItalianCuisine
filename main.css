@@ -46,6 +46,11 @@ html body {
     font-weight: 600;
     margin-top: 50px;
     margin-bottom: 50px; }
+    #navbar .navbar .navbar-header {
+      border-bottom: 1px solid #97614a;
+      width: 126px; }
+      #navbar .navbar .navbar-header .icon-bar {
+        background: #97614a; }
     #navbar .navbar .navbar-brand {
       font-size: 24px;
       text-transform: uppercase; }
@@ -74,15 +79,48 @@ html body {
     height: 400px;
     object-fit: cover;
     object-position: 0px -240px; }
+  #homepage #carousel-example-generic #slide1 p {
+    position: absolute;
+    display: inline-table;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    text-align: center;
+    color: black;
+    background: white;
+    font-size: 16px;
+    padding: 0 10px; }
   #homepage #carousel-example-generic #slide2 img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     object-position: 0px -248px; }
+  #homepage #carousel-example-generic #slide2 p {
+    position: absolute;
+    display: inline-table;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    text-align: center;
+    color: black;
+    background: white;
+    font-size: 16px;
+    padding: 0 10px; }
   #homepage #carousel-example-generic #slide3 img {
     width: 100%;
     height: 400px;
     object-fit: cover; }
+  #homepage #carousel-example-generic #slide3 p {
+    position: absolute;
+    display: inline-table;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    text-align: center;
+    color: black;
+    background: white;
+    font-size: 16px;
+    padding: 0 10px; }
   #homepage .slogan h1 {
     position: relative;
     width: 600px;
@@ -97,8 +135,8 @@ html body {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap; }
-    #homepage .menu-preview .menu-item1::hover {
-      background-color: rgba(255, 0, 0, 0.55); }
+    #homepage .menu-preview .menu-item1:hover {
+      background-size: 110%; }
     #homepage .menu-preview .menu-item1 {
       width: 350px;
       height: 350px;

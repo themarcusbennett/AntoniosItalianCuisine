@@ -257,9 +257,9 @@ html body {
             
             div {
                 text-align: center;
-                color: #aca7a8;
-                width: 50%;
-                height: 50%;
+                color: #363636;
+                width: 70%;
+                height: 70%;
                 overflow: auto;
                 margin: auto;
                 position: absolute;
@@ -270,6 +270,18 @@ html body {
                 bottom: 0;
                 right: 0;
                 
+                h3 {
+                    text-transform: uppercase;
+                }
+                
+                p {
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                }
+                
+                h4 {
+                    color: #97614a;
+                }
             }
             
             img {
@@ -277,12 +289,15 @@ html body {
                 height: 350px;
                 object-fit: cover;
                 padding: 0;
-                border: 2px solid white;
+                //border: 2px solid white;
             }
         }
         
+        .background {
+            background: #f4f4f4;
+        }
     }
-    
+    /* TABLE */
     .specialty-container {
         position: relative;
         width: 100%;

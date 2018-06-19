@@ -142,6 +142,7 @@ html body {
     font-size: 24px; }
 
 #menu-page {
+  /* TABLE */
   /* MENU CONTAINER */ }
   #menu-page .table {
     width: 100%;
@@ -156,9 +157,9 @@ html body {
       padding: 0; }
       #menu-page .table td div {
         text-align: center;
-        color: #aca7a8;
-        width: 50%;
-        height: 50%;
+        color: #363636;
+        width: 70%;
+        height: 70%;
         overflow: auto;
         margin: auto;
         position: absolute;
@@ -168,12 +169,20 @@ html body {
         left: 0;
         bottom: 0;
         right: 0; }
+        #menu-page .table td div h3 {
+          text-transform: uppercase; }
+        #menu-page .table td div p {
+          margin-bottom: 20px;
+          font-size: 16px; }
+        #menu-page .table td div h4 {
+          color: #97614a; }
       #menu-page .table td img {
         width: 100%;
         height: 350px;
         object-fit: cover;
-        padding: 0;
-        border: 2px solid white; }
+        padding: 0; }
+    #menu-page .table .background {
+      background: #f4f4f4; }
   #menu-page .specialty-container {
     position: relative;
     width: 100%;

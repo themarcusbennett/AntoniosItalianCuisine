@@ -1,5 +1,8 @@
-/* VARIABLES */
-#homepage .section-header, #gallery .section-header, #menu-page .specialty-container #section-header, #menu-page .menu-container .section-header, #about .about-container .about-header, #about .testimonials .testimonial-header, #contact .contact-header {
+html body {
+  font-family: 'Cormorant Unicase', serif;
+  background: #1d1d1d; }
+
+#homepage .section-header, #gallery .section-header, #menu-page .specialty-container #section-header, #menu-page .menu-container .section-header, #contact .contact-header, #reservation .reservation-header, #about .about-container .about-header, #about .testimonials .testimonial-header {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -9,7 +12,7 @@
   text-decoration-style: solid;
   text-decoration-color: #aca7a8; }
 
-#menu-page .menu-container .entree-container .entrees .menu-header, #menu-page .menu-container .appetizer-container .appetizers .menu-header, #menu-page .menu-container .dessert-container .desserts .menu-header, #about .testimonials .testimonial-subheader, #contact .hours-header {
+#menu-page .menu-container .entree-container .entrees .menu-header, #menu-page .menu-container .appetizer-container .appetizers .menu-header, #menu-page .menu-container .dessert-container .desserts .menu-header, #contact .hours-header, #reservation .information .hours-header, #reservation .information .location-header, #about .testimonials .testimonial-subheader {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -19,10 +22,7 @@
   text-decoration-style: solid;
   text-decoration-color: #97614a; }
 
-html body {
-  font-family: 'Cormorant Unicase', serif;
-  background: #1d1d1d; }
-
+/* VARIABLES */
 .content-container {
   margin-left: 40px;
   margin-right: 40px; }
@@ -39,6 +39,7 @@ html body {
   #topnavbar .fa-lg {
     color: #97614a; }
 
+/* TOPNAVBAR */
 #navbar {
   /* NAVBAR */ }
   #navbar .navbar {
@@ -72,6 +73,13 @@ html body {
       color: #97614a; }
 
 /* NAVBAR */
+#footer .footer-hr {
+  width: 75%; }
+#footer footer {
+  background-color: white; }
+
+/* FOOTER */
+/* //INDEX.HTML// */
 #homepage {
   /* MENU PREVIEW */ }
   #homepage #carousel-example-generic #slide1 img {
@@ -167,18 +175,7 @@ html body {
       object-fit: cover; }
 
 /* GALLERY */
-#footer .footer-hr {
-  width: 75%; }
-#footer footer {
-  background-color: white; }
-
-/* FOOTER */
 /* //MENU.HTML// */
-#navbar .navbar {
-  font-size: 18px; }
-  #navbar .navbar .navbar-brand {
-    font-size: 24px; }
-
 #menu-page {
   /* TABLE */
   /* MENU CONTAINER */ }
@@ -367,6 +364,100 @@ html body {
             font-size: 16px; }
 
 /* MENU PAGE */
+/* //CONTACT.HTML// */
+#contact {
+  width: 100%;
+  /* FORM */ }
+  #contact .info-paragraph {
+    position: relative;
+    width: 500px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    color: #f4f4f4;
+    text-align: center; }
+  #contact .form {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #f4f4f4;
+    border: 20px double #d2cfd0; }
+    #contact .form input, #contact .form textarea {
+      display: block;
+      margin-bottom: 15px;
+      padding: 5px;
+      width: 100%;
+      max-width: 100%; }
+    #contact .form button {
+      position: relative;
+      border-radius: 15px;
+      width: 80px;
+      left: 50%;
+      transform: translateX(-50%); }
+  #contact .hours {
+    position: relative;
+    width: 500px;
+    margin: 40px auto 40px;
+    padding: 20px;
+    background: #f4f4f4;
+    border: 20px double #d2cfd0;
+    text-align: center; }
+    #contact .hours p {
+      font-size: 16px; }
+    #contact .hours .day {
+      text-transform: uppercase; }
+
+/* CONTACT */
+/* //RESERVATION.HTML// */
+#reservation {
+  /* FORM */ }
+  #reservation .form {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #f4f4f4;
+    border: 20px double #d2cfd0; }
+    #reservation .form input {
+      display: block;
+      margin-bottom: 15px;
+      padding: 5px;
+      width: 100%;
+      max-width: 100%; }
+    #reservation .form button {
+      position: relative;
+      border-radius: 15px;
+      width: 80px;
+      left: 50%;
+      transform: translateX(-50%); }
+  #reservation .information {
+    display: flex;
+    justify-content: space-around;
+    /* HOURS */ }
+    #reservation .information .hours {
+      position: relative;
+      width: 500px;
+      margin: 40px auto 40px;
+      padding: 20px;
+      background: #f4f4f4;
+      border: 20px double #d2cfd0;
+      text-align: center; }
+      #reservation .information .hours p {
+        font-size: 16px; }
+      #reservation .information .hours .day {
+        text-transform: uppercase; }
+    #reservation .information .location {
+      position: relative;
+      width: 500px;
+      margin: 40px auto 40px;
+      padding: 20px;
+      background: #f4f4f4;
+      border: 20px double #d2cfd0;
+      text-align: center; }
+      #reservation .information .location p {
+        font-size: 16px; }
+
+/* RESERVATION */
 /* //ABOUT.HTML// */
 #about {
   /* TESTIMONIALS */ }
@@ -429,49 +520,5 @@ html body {
         color: #97614a; }
 
 /* ABOUT */
-/* //CONTACT.HTML// */
-#contact {
-  width: 100%;
-  /* FORM */ }
-  #contact .info-paragraph {
-    position: relative;
-    width: 500px;
-    margin: 0 auto 30px;
-    font-size: 18px;
-    color: #f4f4f4;
-    text-align: center; }
-  #contact .form {
-    position: relative;
-    width: 500px;
-    margin: 0 auto;
-    padding: 10px;
-    background: #f4f4f4;
-    border: 20px double #d2cfd0; }
-    #contact .form input, #contact .form textarea {
-      display: block;
-      margin-bottom: 15px;
-      padding: 5px;
-      width: 100%;
-      max-width: 100%; }
-    #contact .form button {
-      position: relative;
-      border-radius: 15px;
-      width: 80px;
-      left: 50%;
-      transform: translateX(-50%); }
-  #contact .hours {
-    position: relative;
-    width: 500px;
-    margin: 40px auto 40px;
-    padding: 20px;
-    background: #f4f4f4;
-    border: 20px double #d2cfd0;
-    text-align: center; }
-    #contact .hours p {
-      font-size: 16px; }
-    #contact .hours .day {
-      text-transform: uppercase; }
-
-/* CONTACT */
 
 /*# sourceMappingURL=main.css.map */

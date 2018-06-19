@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-
 <section id="topnavbar">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -33,7 +32,6 @@
         </div><!-- /.container-fluid -->
     </nav>
 </section>
-
 <section id="navbar">
    <nav class="navbar content-container">
         <div class="container">
@@ -59,122 +57,54 @@
         </div><!-- .container -->
     </nav>
 </section>
-
-<section id="homepage">
+<section id="reservation">
    
-    <div id="carousel-example-generic" class="carousel slide content-container" data-ride="carousel">
-        <!-- INDICATORS -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
+    <div class="reservation-header">
+        <h1>Reservation</h1>
+    </div>
+    
+    <form class="form">
+        <input type="date" placeholder="Date">
+        <input type="time" placeholder="Time">
+        <input type="number" placeholder="Guests">
+        <button>Submit</button>
+    </form>
+    <div class="information">
+       
+        <div class="hours-container">
+            <h3 class="hours-header">
+               Hours of Operation
+            </h3>
 
-        <!-- WRAPPER 4 SLIDES -->
-        <div class="carousel-inner" role="listbox">
-           
-            <div class="item active" id="slide1">
-                <img src="img/homepage.jpg" class="carousel-image">
-                <p>Chefs preparing food.</p>
+            <div class="hours">
+                <p>
+                    <span class="day">Monday
+                    </span> to 
+                    <span class="day">Thursday
+                    </span> 11:30 A.M. - 10 P.M.
+                </p>
+                <p>
+                   <span class="day">Friday</span> and <span class="day">Saturday</span> 11:30 A.M. - 12 A.M.
+                </p>
+                <p>
+                    <span class="day">Sunday</span> 12 P.M. - 10 P.M.
+                </p>
             </div>
-            
-            <div class="item" id="slide2">
-                <img src="img/extra7.jpg" class="carousel-image">
-                <p>Clovers and Tilapia over Salmon.</p>
-            </div>
-            
-            <div class="item" id="slide3">
-                <img src="img/gallery1.jpg" class="carousel-image">
-                <p>Bar Area.</p>
+        </div>
+        <div class="location-container">
+            <h3 class="location-header">Location</h3>
+
+            <div class="location">
+                <p><strong>100 Boylston Street</strong></p>
+                <p>(Directly in front of Sprint store)</p>
             </div>
             
         </div>
-
-        <!-- CONTROLS -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+       
     </div>
-    
-    <div class="slogan">
-        <h1>Locally sourced. always fresh.</h1>
-    </div>
-    
-    <div class="section-header">
-        <h1>Menu</h1>
-    </div>
-    
-    <div class="menu-preview">
-           
-        <img src="img/menuitem2.jpg" class="menu-item1">
-        <img src="img/menuitem3.jpg" class="menu-item2">
-        <img src="img/menuitem5.jpg" class="menu-item3">
-        
-    </div>
-    
+   
 </section>
 
-<section id="gallery">
-   
-    <div class="section-header">
-        <h1>Gallery</h1>
-    </div>
-    <div class="image-gallery-container">
-        <div class="row1">
-            <div class="gallery-photo">
-                <img src="img/gallery1.jpg">
-            </div>
-
-            <div class="gallery-photo">
-                <img src="img/gallery2.jpg">
-            </div>
-
-            <div class="gallery-photo">
-                <img src="img/gallery3.jpg">
-            </div>
-
-            <div class="gallery-photo">
-                <img src="img/gallery4.jpg">
-            </div>
-           
-        </div>
-        <!-- ROW 1 -->
-        
-        <div class="row2">
-            <div class="gallery-photo">
-                <img src="img/gallery5.jpg">
-            </div>
-
-            <div class="gallery-photo">
-                <img src="img/gallery6.jpg">
-            </div>
-
-            <div class="gallery-photo">
-                <img src="img/extra6.jpg">
-            </div>
-
-            <div class="gallery-photo">
-                <img src="img/extra3.jpg">
-            </div>  
-        </div>
-        <!-- ROW 2 -->
-         
-    </div>
-    <!-- IMAGE GALLERY CONTAINER -->
-</section> 
-   
-<section id="footer">
-    <hr class="footer-hr">
-    <footer>
-        
-    </footer>
-</section>
-    
 <section class="scripts">
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

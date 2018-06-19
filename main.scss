@@ -1,4 +1,8 @@
-/* VARIABLES */ 
+html body {
+    font-family: 'Cormorant Unicase', serif;
+    background: #1d1d1d;
+}
+
 %section-header {
     
     text-align: center;
@@ -22,12 +26,7 @@
     text-decoration-style: solid;
     text-decoration-color: #97614a;
 } 
-
-
-html body {
-    font-family: 'Cormorant Unicase', serif;
-    background: #1d1d1d;
-}
+/* VARIABLES */
 
 .content-container {
     margin-left: 40px;
@@ -55,6 +54,7 @@ html body {
     }
     /* ICONS */
 }
+/* TOPNAVBAR */
 
 #navbar {
     
@@ -109,6 +109,20 @@ html body {
 }
 /* NAVBAR */
 
+#footer {
+    
+    .footer-hr {
+        width: 75%;
+    }
+    
+    footer {
+        background-color: white;
+    }
+}
+/* FOOTER */
+
+
+/* //INDEX.HTML// */
 #homepage {
     
     #carousel-example-generic {
@@ -267,37 +281,8 @@ html body {
 }
 /* GALLERY */
 
-#footer {
-    
-    .footer-hr {
-        width: 75%;
-    }
-    
-    footer {
-        background-color: white;
-    }
-}
-/* FOOTER */
-
-
 
 /* //MENU.HTML// */
-#navbar {
-    //background: #575151;
-    
-    .navbar {
-        font-size: 18px;
-        
-        .navbar-brand {
-            font-size: 24px;
-        }
-        
-        a {
-            //color: white;
-        }
-    }
-}
-
 #menu-page {
     
     .table {
@@ -596,6 +581,154 @@ html body {
 /* MENU PAGE */
 
 
+/* //CONTACT.HTML// */ 
+#contact {
+    width: 100%;
+    
+    .contact-header {
+        @extend %section-header;
+    }
+    
+    .info-paragraph {
+        position: relative;
+        width: 500px;
+        margin: 0 auto 30px;
+        font-size: 18px;
+        color: #f4f4f4;
+        text-align: center;
+    }
+    
+    .form {
+        position: relative;
+        width: 500px;
+        margin: 0 auto;
+        padding: 10px;
+        background: #f4f4f4;
+        border: 20px double #d2cfd0;
+        
+        input, textarea {
+            display: block;
+            margin-bottom: 15px;
+            padding: 5px;
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        button {
+            position: relative;
+            border-radius: 15px;
+            width: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    /* FORM */
+    .hours-header {
+        @extend %section-header-inverse;
+    }
+    .hours {
+        position: relative;
+        width: 500px;
+        margin: 40px auto 40px;
+        padding: 20px;
+        background: #f4f4f4;
+        border: 20px double #d2cfd0;
+        text-align: center;
+        
+        p {
+            font-size: 16px;
+        }
+        
+        .day {
+            text-transform: uppercase;
+        }
+    }
+    
+}
+/* CONTACT */
+
+
+/* //RESERVATION.HTML// */
+#reservation {
+    
+    .reservation-header {
+        @extend %section-header;
+    }
+    
+    .form {
+        position: relative;
+        width: 500px;
+        margin: 0 auto;
+        padding: 10px;
+        background: #f4f4f4;
+        border: 20px double #d2cfd0;
+        
+        input {
+            display: block;
+            margin-bottom: 15px;
+            padding: 5px;
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        button {
+            position: relative;
+            border-radius: 15px;
+            width: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    /* FORM */
+    .information {
+        display: flex;
+        justify-content: space-around;
+        
+        .hours-header {
+            @extend %section-header-inverse;
+        }
+
+        .hours {
+            position: relative;
+            width: 500px;
+            margin: 40px auto 40px;
+            padding: 20px;
+            background: #f4f4f4;
+            border: 20px double #d2cfd0;
+            text-align: center;
+
+            p {
+                font-size: 16px;
+            }
+
+            .day {
+                text-transform: uppercase;
+            }
+        }
+        /* HOURS */
+        
+        .location-header {
+            @extend %section-header-inverse;
+        }
+        
+        .location {
+            position: relative;
+            width: 500px;
+            margin: 40px auto 40px;
+            padding: 20px;
+            background: #f4f4f4;
+            border: 20px double #d2cfd0;
+            text-align: center;
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+/* RESERVATION */
+
+
 /* //ABOUT.HTML// */
 #about {
     
@@ -713,70 +846,3 @@ html body {
         
 }
 /* ABOUT */
-
-
-/* //CONTACT.HTML// */ 
-#contact {
-    width: 100%;
-    
-    .contact-header {
-        @extend %section-header;
-    }
-    
-    .info-paragraph {
-        position: relative;
-        width: 500px;
-        margin: 0 auto 30px;
-        font-size: 18px;
-        color: #f4f4f4;
-        text-align: center;
-    }
-    
-    .form {
-        position: relative;
-        width: 500px;
-        margin: 0 auto;
-        padding: 10px;
-        background: #f4f4f4;
-        border: 20px double #d2cfd0;
-        
-        input, textarea {
-            display: block;
-            margin-bottom: 15px;
-            padding: 5px;
-            width: 100%;
-            max-width: 100%;
-        }
-        
-        button {
-            position: relative;
-            border-radius: 15px;
-            width: 80px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    /* FORM */
-    .hours-header {
-        @extend %section-header-inverse;
-    }
-    .hours {
-        position: relative;
-        width: 500px;
-        margin: 40px auto 40px;
-        padding: 20px;
-        background: #f4f4f4;
-        border: 20px double #d2cfd0;
-        text-align: center;
-        
-        p {
-            font-size: 16px;
-        }
-        
-        .day {
-            text-transform: uppercase;
-        }
-    }
-    
-}
-/* CONTACT */

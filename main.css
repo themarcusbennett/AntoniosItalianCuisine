@@ -351,7 +351,8 @@ html body {
       text-align: center;
       color: black;
       background: white;
-      font-size: 16px; }
+      font-size: 16px;
+      padding: 0 10px; }
   #about .all-testimonials {
     position: relative;
     height: 100%;

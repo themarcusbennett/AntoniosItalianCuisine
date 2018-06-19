@@ -756,4 +756,27 @@ html body {
             transform: translateX(-50%);
         }
     }
+    /* FORM */
+    .hours-header {
+        @extend %section-header-inverse;
+    }
+    .hours {
+        position: relative;
+        width: 500px;
+        margin: 40px auto 40px;
+        padding: 20px;
+        background: #f4f4f4;
+        border: 20px double #d2cfd0;
+        text-align: center;
+        
+        p {
+            font-size: 16px;
+        }
+        
+        .day {
+            text-transform: uppercase;
+        }
+    }
+    
 }
+/* CONTACT */

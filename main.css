@@ -9,7 +9,7 @@
   text-decoration-style: solid;
   text-decoration-color: #aca7a8; }
 
-#menu-page .menu-container .entree-container .entrees .menu-header, #menu-page .menu-container .appetizer-container .appetizers .menu-header, #menu-page .menu-container .dessert-container .desserts .menu-header, #about .testimonials .testimonial-subheader {
+#menu-page .menu-container .entree-container .entrees .menu-header, #menu-page .menu-container .appetizer-container .appetizers .menu-header, #menu-page .menu-container .dessert-container .desserts .menu-header, #about .testimonials .testimonial-subheader, #contact .hours-header {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -431,7 +431,8 @@ html body {
 /* ABOUT */
 /* //CONTACT.HTML// */
 #contact {
-  width: 100%; }
+  width: 100%;
+  /* FORM */ }
   #contact .info-paragraph {
     position: relative;
     width: 500px;
@@ -458,5 +459,19 @@ html body {
       width: 80px;
       left: 50%;
       transform: translateX(-50%); }
+  #contact .hours {
+    position: relative;
+    width: 500px;
+    margin: 40px auto 40px;
+    padding: 20px;
+    background: #f4f4f4;
+    border: 20px double #d2cfd0;
+    text-align: center; }
+    #contact .hours p {
+      font-size: 16px; }
+    #contact .hours .day {
+      text-transform: uppercase; }
+
+/* CONTACT */
 
 /*# sourceMappingURL=main.css.map */

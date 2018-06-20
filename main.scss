@@ -1,3 +1,203 @@
+@media (min-width: 300px) {
+    #navbar {
+        #navbarbottom {
+            margin-top: 0;
+        }
+    }
+    
+    #homepage {
+        
+        #carousel-example-generic {
+            width: 100%;
+            height: 100%;
+            
+            #slide1 {
+                
+                #carousel-image {
+                    height: 5%;
+                    min-height: 200px;
+                    max-height: 400px;
+                    object-position: unset;
+                } 
+                
+                p {
+                    margin: 0 0 2px;
+                }
+            }
+            #slide2 {
+                
+                #carousel-image {
+                    height: 5%;
+                    min-height: 200px;
+                    max-height: 400px;
+                    object-position: unset;
+                } 
+                
+                p {
+                    margin: 0 0 2px;
+                }
+            }
+            #slide3 {
+                
+                #carousel-image {
+                    height: 5%;
+                    min-height: 200px;
+                    max-height: 400px;
+                    object-position: unset;
+                } 
+                
+                p {
+                    margin: 0 0 2px;
+                }
+            }
+        }
+        
+        #menu-item1, #menu-item2, #menu-item3 {
+            width: 100%;
+            height: 150px;
+        }
+    }
+    /* HOMEPAGE */
+    
+    .slogan h1 {
+        font-size: 2.25em;
+    }
+    
+    
+}
+@media (max-width: 518px) {
+    #contact {
+        
+        #form {
+            width: 100%;
+            margin: 0px;
+        }
+        
+        #hours {
+            width: 100%;
+            margin: 0px;
+        }
+        #info-paragraph {
+            width: 100%;
+            margin: 0px;
+        }
+    }
+    
+    #reservation {
+        
+        #form2 {
+            width: 100%;
+            margin: 0px;
+        }
+        
+        #hours2 {
+            width: 100%;
+            margin: 0px;
+        }
+        #location {
+            width: 100%;
+            margin: 0px;
+        }
+    }
+    
+    #about {
+        
+        #row {
+            padding: 0;
+        }
+        
+        #all-testimonials {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+@media (max-width: 720px) {
+     #about {
+        
+        #all-testimonials {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+@media (min-width: 300px) and (max-width: 680px) {
+    #menu-page {
+        #menu {
+            justify-content: unset;
+            display: unset;
+        }
+        #menu-header {
+            background-position: center;
+            background-size: cover;
+            
+        }
+    }
+}
+@media (min-width: 681px) and (max-width: 916px) {
+    #menu-page {
+        #menu {
+            justify-content: unset;
+            display: unset;
+        }
+        #menu-header {
+            background-position: center
+                ;
+            background-size: cover;
+            
+        }
+    }
+}
+@media (max-width: 1020px) {
+    #reservation {
+        
+        #information {
+            display: block;
+        }
+    }
+}
+/* for ABOUT.HTML Sliders */
+@media (max-width: 1217px) and (min-width: 992px) {
+    
+    #about {
+        .carousel-inner {
+            margin-top: 15%;
+        }
+    }
+}
+@media (max-width: 1105px) and (min-width: 992px) {
+    
+     #about {
+        .carousel-inner {
+            margin-top: 17%;
+        }
+    }
+}
+@media (max-width: 1081px) and (min-width: 992px) {
+    
+     #about {
+        .carousel-inner {
+            margin-top: 20%;
+        }
+    }
+}
+@media (max-width: 1027px) and (min-width: 992px) {
+    
+     #about {
+        .carousel-inner {
+            margin-top: 23%;
+        }
+    }
+}
+@media (max-width: 1017px) and (min-width: 992px) {
+    
+     #about {
+        #about-slide1 {
+            margin-top: 2%;
+        }
+    }
+}
+
 html body {
     font-family: 'Cormorant Unicase', serif;
     background: #1d1d1d;
@@ -34,6 +234,7 @@ html body {
 }
 
 #topnavbar {
+   width: 100%;
     
     nav {
         //background: inherit;
@@ -66,7 +267,6 @@ html body {
         
         .navbar-header {
             border-bottom: 1px solid #97614a;
-            width: 126px;
             
             .icon-bar {
                 background: #97614a;
@@ -201,48 +401,72 @@ html body {
         }
     }
 
-    .slogan h1 {
-        position: relative;
-        width: 600px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        text-transform: uppercase;
-        color: #97614a;
-        border-top: 3px solid #aca7a8;
-        border-bottom: 3px solid #aca7a8;
-        
+    .slogan {
+        width: 100%;
+        h1 {
+            position: relative;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            text-transform: uppercase;
+            color: #97614a;
+            border-top: 3px solid #aca7a8;
+            border-bottom: 3px solid #aca7a8;
+        }
+
     }
     
     .menu-preview {
         
-        display: flex;
-        justify-content: space-around;
-        flex-flow: row wrap;
-        //flex-direction: column;
+        width: 100%;
+        overflow: hidden;
         
-        .menu-item1:hover {
-            background-size: 110%;
+        .menu-preview-container {
+            position: relative;
+            
+            .menu-item1 {
+                width: 350px;
+                height: 350px;
+                object-fit: cover;
+                //margin: auto 20px;
+            }
+            
+            .menu-item2 {
+                width: 350px;
+                height: 350px;
+                object-fit: cover; 
+                //margin: auto 20px;
+            }
+            
+            
+            .menu-item3 {
+                width: 350px;
+                height: 350px;
+                object-fit: cover;
+                //margin: auto 20px;
+            }
+            
+            h2 {
+                //@extend %section-header-inverse;
+                position: absolute;
+                //width: 20%;
+                height: 21%;
+                border-radius: 5px;
+                background: white;
+                color: black;
+                text-align: center;
+                font-weight: 600;
+                z-index: 1;
+                bottom: 0;
+                top: 0;
+                left: 50%;
+                right: 0;
+                transform: translate(-50%);
+                
+            }
         }
         
-        .menu-item1 {
-            width: 350px;
-            height: 350px;
-            object-fit: cover;
-            //margin: auto 20px;
-        }
-        .menu-item2 {
-            width: 350px;
-            height: 350px;
-            object-fit: cover; 
-            //margin: auto 20px;
-        }
-        .menu-item3 {
-            width: 350px;
-            height: 350px;
-            object-fit: cover;
-            //margin: auto 20px;
-        }
     }
     /* MENU PREVIEW */
     
@@ -262,20 +486,19 @@ html body {
     
     .image-gallery-container {
         position: relative;
-        display: grid;
-        justify-content: space-around;
+        width: 100%;
+        //display: grid;
+        //justify-content: space-around;
         
-        .row1 {
-            display: flex;
-        }
-        
-        .row2 {
-            display: flex;
-        }
-        .gallery-photo img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
+        .row {
+            width: 100%;
+            margin: 0;
+            
+            .gallery-photo {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }  
         }
     }
 }
@@ -341,6 +564,7 @@ html body {
             background: #f4f4f4;
         }
     }
+    
     /* TABLE */
     .specialty-container {
         position: relative;
@@ -366,214 +590,217 @@ html body {
             position: inherit;
             display: flex;
             justify-content: space-around;
-        }
         
-        .entree-container {
-            position: inherit;
-            overflow: hidden;
-            background: black;
-            width: 400px;
-            
-            .entrees {
-                
-                .menu-header {
-                    @extend %section-header-inverse;
-                    position: relative;
-                    display: flex;
-                    background-image: url(img/food1.jpg);
-                    background-size: 600px;
-                    background-position: -155px -50px;
-                    height: 300px;
-                    margin: 0;
-                    
-                    .image-overlay {
-                        background: rgba(0, 0, 0, 0.35);
+            .entree-container {
+                position: inherit;
+                overflow: hidden;
+                background: black;
+                flex-basis: 30%;
+                min-width: 300px;
+
+                .entrees {
+
+                    .menu-header {
+                        @extend %section-header-inverse;
+                        position: relative;
+                        display: flex;
+                        background-image: url(img/food1.jpg);
+                        background-size: 600px;
+                        background-position: -155px -50px;
+                        height: 300px;
                         margin: 0;
-                        height: 100%;
-                        width: 100%;
-                        position: absolute;
-                        top: 0px;
+
+                        .image-overlay {
+                            background: rgba(0, 0, 0, 0.35);
+                            margin: 0;
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                            top: 0px;
+                        }
+
+                        h2 {
+                            margin: 20px;
+                            z-index: 1;
+                            width: 100%;
+                            text-align: center;
+                        }
                     }
-                    
-                    h2 {
-                        margin: 20px;
-                        z-index: 1;
-                        width: 100%;
-                        text-align: center;
-                    }
-                }
-                /* MENU HEADER */
-                
-                .menu-items {
-                    padding: 10px;
-                    
-                    li {
-                        list-style: none;
-                        color: #d1d1d1;
-                        
-                        h4 {
-                            color: #a3a3a3;
-                            text-transform: uppercase;
-                            
-                            .total {
-                                color: #97614a;
+                    /* MENU HEADER */
+
+                    .menu-items {
+                        padding: 10px;
+
+                        li {
+                            list-style: none;
+                            color: #d1d1d1;
+
+                            h4 {
+                                color: #a3a3a3;
+                                text-transform: uppercase;
+
+                                .total {
+                                    color: #97614a;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
                             }
                         }
-                        
-                        p {
-                            font-size: 16px;
+                    }
+                }
+                /* ENTREES */
+            }
+            /* ENTREE CONTAINER */
+
+            .appetizer-container {
+                position: inherit;
+                //border: 2px solid #aca7a8;
+                overflow: hidden;
+                flex-basis: 30%;
+                min-width: 300px;
+                background: black;
+
+
+
+                .appetizers {
+
+                    .menu-header {
+                        @extend %section-header-inverse;
+                        position: relative;
+                        display: flex;
+                        background-image: url(img/food4.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        height: 300px;
+                        margin: 0;
+
+                        h2 {
+                            margin: 20px;
+                            text-align: center;
+                            width: 100%;
+                            z-index: 1;
+                        }
+
+                        .image-overlay {
+                            background: rgba(0, 0, 0, 0.35);
+                            margin: 0;
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                            top: 0px;
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                        //z-index: -1;
+                        position: relative;
+                        top: -70px;
+                    }
+
+                    .menu-items {
+                        padding: 10px;
+
+                        li {
+                            list-style: none;
+                            color: #d1d1d1;
+
+                            h4 {
+                                color: #a3a3a3;
+                                text-transform: uppercase;
+
+                                .total {
+                                    color: #97614a;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
                         }
                     }
                 }
+                /* APPETIZERS */
             }
-            /* ENTREES */
+            /* APPETIZER CONTAINER */
+
+            .dessert-container {
+                position: inherit;
+                //border: 2px solid #aca7a8;
+                overflow: hidden;
+                background: black;
+                flex-basis: 30%;
+                min-width: 300px;
+
+                .desserts {
+
+                    .menu-header {
+                        @extend %section-header-inverse;
+                        position: relative;
+                        display: flex;
+                        background-image: url(img/food3.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        height: 300px;
+                        margin: 0;
+
+                        .image-overlay {
+                            background: rgba(0, 0, 0, 0.35);
+                            margin: 0;
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                            top: 0px;
+                        }
+
+                        h2 {
+                            margin: 20px;
+                            text-align: center;
+                            width: 100%;
+                            z-index: 1;
+                        }
+
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                        //z-index: -1;
+                        position: relative;
+                        top: -70px;
+                    }
+
+                    .menu-items {
+                        padding: 10px;
+
+                        li {
+                            list-style: none;
+                            color: #d1d1d1;
+
+                            h4 {
+                                color: #a3a3a3;
+                                text-transform: uppercase;
+
+                                .total {
+                                    color: #97614a;
+                                }
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                /* DESSERTS */
+            } 
+            /* DESSERT CONTAINER */
         }
-        /* ENTREE CONTAINER */
-        
-        .appetizer-container {
-            position: inherit;
-            //border: 2px solid #aca7a8;
-            overflow: hidden;
-            width: 400px;
-            background: black;
-            
-            
-            
-            .appetizers {
-                
-                .menu-header {
-                    @extend %section-header-inverse;
-                    position: relative;
-                    display: flex;
-                    background-image: url(img/food4.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    height: 300px;
-                    margin: 0;
-                    
-                    h2 {
-                        margin: 20px;
-                        text-align: center;
-                        width: 100%;
-                        z-index: 1;
-                    }
-                    
-                    .image-overlay {
-                        background: rgba(0, 0, 0, 0.35);
-                        margin: 0;
-                        height: 100%;
-                        width: 100%;
-                        position: absolute;
-                        top: 0px;
-                    }
-                }
-                
-                img {
-                    width: 100%;
-                    height: 300px;
-                    object-fit: cover;
-                    //z-index: -1;
-                    position: relative;
-                    top: -70px;
-                }
-                
-                .menu-items {
-                    padding: 10px;
-                    
-                    li {
-                        list-style: none;
-                        color: #d1d1d1;
-                        
-                        h4 {
-                            color: #a3a3a3;
-                            text-transform: uppercase;
-                            
-                            .total {
-                                color: #97614a;
-                            }
-                        }
-                        
-                        p {
-                            font-size: 16px;
-                        }
-                    }
-                }
-            }
-            /* APPETIZERS */
-        }
-        /* APPETIZER CONTAINER */
-       
-        .dessert-container {
-            position: inherit;
-            //border: 2px solid #aca7a8;
-            overflow: hidden;
-            background: black;
-            width: 400px;
-            
-            .desserts {
-                
-                .menu-header {
-                    @extend %section-header-inverse;
-                    position: relative;
-                    display: flex;
-                    background-image: url(img/food3.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    height: 300px;
-                    margin: 0;
-                    
-                    .image-overlay {
-                        background: rgba(0, 0, 0, 0.35);
-                        margin: 0;
-                        height: 100%;
-                        width: 100%;
-                        position: absolute;
-                        top: 0px;
-                    }
-                    
-                    h2 {
-                        margin: 20px;
-                        text-align: center;
-                        width: 100%;
-                        z-index: 1;
-                    }
-                    
-                }
-                
-                img {
-                    width: 100%;
-                    height: 300px;
-                    object-fit: cover;
-                    //z-index: -1;
-                    position: relative;
-                    top: -70px;
-                }
-                
-                .menu-items {
-                    padding: 10px;
-                    
-                    li {
-                        list-style: none;
-                        color: #d1d1d1;
-                        
-                        h4 {
-                            color: #a3a3a3;
-                            text-transform: uppercase;
-                            
-                            .total {
-                                color: #97614a;
-                            }
-                        }
-                        
-                        p {
-                            font-size: 16px;
-                        }
-                    }
-                }
-            }
-            /* DESSERTS */
-        } 
-        /* DESSERT CONTAINER */
         
     }
     /* MENU CONTAINER */

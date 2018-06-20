@@ -9,7 +9,7 @@
     <link href="main.css" type="text/css" rel="stylesheet">
     
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Courgette|Cormorant+Unicase" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase:400, 600" rel="stylesheet">
     
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -35,7 +35,7 @@
 </section>
 
 <section id="navbar">
-   <nav class="navbar content-container">
+   <nav class="navbar" id="navbarbottom">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
@@ -62,7 +62,7 @@
 
 <section id="homepage">
    
-    <div id="carousel-example-generic" class="carousel slide content-container" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- INDICATORS -->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -74,17 +74,17 @@
         <div class="carousel-inner" role="listbox">
            
             <div class="item active" id="slide1">
-                <img src="img/homepage.jpg" class="carousel-image">
+                <img src="img/homepage.jpg" class="carousel-image" id="carousel-image">
                 <p>Chefs preparing food.</p>
             </div>
             
             <div class="item" id="slide2">
-                <img src="img/extra7.jpg" class="carousel-image">
+                <img src="img/extra7.jpg" class="carousel-image" id="carousel-image">
                 <p>Clovers and Tilapia over Salmon.</p>
             </div>
             
             <div class="item" id="slide3">
-                <img src="img/gallery1.jpg" class="carousel-image">
+                <img src="img/gallery1.jpg" class="carousel-image" id="carousel-image">
                 <p>Bar Area.</p>
             </div>
             
@@ -110,10 +110,18 @@
     </div>
     
     <div class="menu-preview">
-           
-        <img src="img/menuitem2.jpg" class="menu-item1">
-        <img src="img/menuitem3.jpg" class="menu-item2">
-        <img src="img/menuitem5.jpg" class="menu-item3">
+        <div class="menu-preview-container">
+            <img src="img/menuitem2.jpg" class="menu-item1" id="menu-item1">
+            <h2>Entrees</h2>
+        </div> 
+        <div class="menu-preview-container">
+            <img src="img/menuitem3.jpg" class="menu-item2" id="menu-item2">
+            <h2>Appetizers</h2>
+        </div>
+        <div class="menu-preview-container">
+            <img src="img/menuitem5.jpg" class="menu-item3" id="menu-item3">
+            <h2>Desserts</h2>
+        </div>
         
     </div>
     
@@ -125,44 +133,24 @@
         <h1>Gallery</h1>
     </div>
     <div class="image-gallery-container">
-        <div class="row1">
-            <div class="gallery-photo">
-                <img src="img/gallery1.jpg">
-            </div>
+        <div class="row">
+                <img src="img/gallery1.jpg" class="gallery-photo" id="gallery-photo">
 
-            <div class="gallery-photo">
-                <img src="img/gallery2.jpg">
-            </div>
+                <img src="img/gallery2.jpg" class="gallery-photo" id="gallery-photo">
 
-            <div class="gallery-photo">
-                <img src="img/gallery3.jpg">
-            </div>
+                <img src="img/gallery3.jpg" class="gallery-photo" id="gallery-photo">
 
-            <div class="gallery-photo">
-                <img src="img/gallery4.jpg">
-            </div>
+                <img src="img/gallery4.jpg" class="gallery-photo" id="gallery-photo">
            
+                <img src="img/gallery5.jpg" class="gallery-photo" id="gallery-photo">
+
+                <img src="img/gallery6.jpg" class="gallery-photo" id="gallery-photo">
+
+                <img src="img/extra6.jpg" class="gallery-photo" id="gallery-photo">
+
+                <img src="img/extra3.jpg" class="gallery-photo" id="gallery-photo">
         </div>
-        <!-- ROW 1 -->
-        
-        <div class="row2">
-            <div class="gallery-photo">
-                <img src="img/gallery5.jpg">
-            </div>
-
-            <div class="gallery-photo">
-                <img src="img/gallery6.jpg">
-            </div>
-
-            <div class="gallery-photo">
-                <img src="img/extra6.jpg">
-            </div>
-
-            <div class="gallery-photo">
-                <img src="img/extra3.jpg">
-            </div>  
-        </div>
-        <!-- ROW 2 -->
+        <!-- ROW -->
          
     </div>
     <!-- IMAGE GALLERY CONTAINER -->

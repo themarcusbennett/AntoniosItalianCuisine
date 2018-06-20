@@ -9,7 +9,7 @@
     <link href="main.css" type="text/css" rel="stylesheet">
     
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Courgette|Cormorant+Unicase" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase:400, 600" rel="stylesheet">
     
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -20,7 +20,7 @@
 <body>
 <section id="topnavbar">
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
+        <div class="container">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a><i class="fas fa-phone fa-lg"></i>  1 (234) 567-8912<span class="sr-only">(current)</span></a></li>
@@ -31,9 +31,11 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-</section>
+</section> 
+
+
 <section id="navbar">
-   <nav class="navbar content-container">
+   <nav class="navbar">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
@@ -57,26 +59,27 @@
         </div><!-- .container -->
     </nav>
 </section>
+
 <section id="reservation">
    
     <div class="reservation-header">
         <h1>Reservation</h1>
     </div>
     
-    <form class="form">
+    <form class="form" id="form2">
         <input type="date" placeholder="Date">
         <input type="time" placeholder="Time">
         <input type="number" placeholder="Guests">
         <button>Submit</button>
     </form>
-    <div class="information">
+    <div class="information" id="information">
        
         <div class="hours-container">
             <h3 class="hours-header">
                Hours of Operation
             </h3>
 
-            <div class="hours">
+            <div class="hours" id="hours2">
                 <p>
                     <span class="day">Monday
                     </span> to 
@@ -94,7 +97,7 @@
         <div class="location-container">
             <h3 class="location-header">Location</h3>
 
-            <div class="location">
+            <div class="location" id="location">
                 <p><strong>100 Boylston Street</strong></p>
                 <p>(Directly in front of Sprint store)</p>
             </div>

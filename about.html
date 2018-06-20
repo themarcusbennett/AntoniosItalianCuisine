@@ -9,7 +9,7 @@
     <link href="main.css" type="text/css" rel="stylesheet">
     
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded|Courgette|Cormorant+Unicase" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase:400, 600" rel="stylesheet">
     
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -35,7 +35,7 @@
 
 <section id="navbar">
   
-   <nav class="navbar content-container">
+   <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
@@ -64,15 +64,15 @@
 
 <section id="about">
     <div class="container-fluid about-container">
-        <div class="row">
-            <div class="col-lg-6 about-text">
+        <div class="row" id="row">
+            <div class="col-lg-6  col-md-6 about-text">
                <h1 class="about-header">About Us</h1>
                <p class="about-paragraph">
                 At Antonio's our biggest advocates are the farmers we work with every week. Without the fresh produce we get shipped in every week, our food wouldn't be ranked top 100 in Boston! We take pride in our locally sourced ingredients. <br> Our head operations chef Marcus is in charge of running the kitchen. Along with tens of other staff members that keep this restaurant running and healthy everyday!     
                </p>
             </div>
             <!-- ABOUT TEXT -->
-            <div class="col-lg-6 about-slide1">
+            <div class="col-lg-6  col-md-6 about-slide1" id="about-slide1">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                    
                     <!-- INDICATORS -->
@@ -83,7 +83,7 @@
                     </ol>
                     
                     <!-- WRAPPER 4 SLIDES -->
-                    <div class="carousel-inner ci1" role="listbox">
+                    <div class="carousel-inner ci1" role="listbox" id="carousel-inner">
 
                         <div class="item active" id="slide1">
                             <img src="img/extra3.jpg" class="carousel-image">
@@ -118,13 +118,13 @@
     </div>
     <!-- ABOUT CONTAINER -->
     
-    <div class="testimonials content-container">
+    <div class="testimonials">
        
         <h1 class="testimonial-header">Testimonials</h1>
         <h4 class="testimonial-subheader">From Our Customers</h4>
         <!-- text transform uppercase
         border bottom 1px solid white -->
-        <div class="all-testimonials">
+        <div class="all-testimonials" id="all-testimonials">
             
             <div class="testimonial1">
                 <p>This is one of my favorite restaurants to visit whenever I'm in Boston! The service and food is beyond phenomenal! Antonio's deserves 5 out of 5 stars!</p>

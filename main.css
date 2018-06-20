@@ -1,3 +1,101 @@
+@media (min-width: 300px) {
+  #navbar #navbarbottom {
+    margin-top: 0; }
+
+  #homepage #carousel-example-generic {
+    width: 100%;
+    height: 100%; }
+    #homepage #carousel-example-generic #slide1 #carousel-image {
+      height: 5%;
+      min-height: 200px;
+      max-height: 400px;
+      object-position: unset; }
+    #homepage #carousel-example-generic #slide1 p {
+      margin: 0 0 2px; }
+    #homepage #carousel-example-generic #slide2 #carousel-image {
+      height: 5%;
+      min-height: 200px;
+      max-height: 400px;
+      object-position: unset; }
+    #homepage #carousel-example-generic #slide2 p {
+      margin: 0 0 2px; }
+    #homepage #carousel-example-generic #slide3 #carousel-image {
+      height: 5%;
+      min-height: 200px;
+      max-height: 400px;
+      object-position: unset; }
+    #homepage #carousel-example-generic #slide3 p {
+      margin: 0 0 2px; }
+  #homepage #menu-item1, #homepage #menu-item2, #homepage #menu-item3 {
+    width: 100%;
+    height: 150px; }
+
+  /* HOMEPAGE */
+  .slogan h1 {
+    font-size: 2.25em; } }
+@media (max-width: 518px) {
+  #contact #form {
+    width: 100%;
+    margin: 0px; }
+  #contact #hours {
+    width: 100%;
+    margin: 0px; }
+  #contact #info-paragraph {
+    width: 100%;
+    margin: 0px; }
+
+  #reservation #form2 {
+    width: 100%;
+    margin: 0px; }
+  #reservation #hours2 {
+    width: 100%;
+    margin: 0px; }
+  #reservation #location {
+    width: 100%;
+    margin: 0px; }
+
+  #about #row {
+    padding: 0; }
+  #about #all-testimonials {
+    width: 100%;
+    margin: 0; } }
+@media (max-width: 720px) {
+  #about #all-testimonials {
+    width: 100%;
+    margin: 0; } }
+@media (min-width: 300px) and (max-width: 680px) {
+  #menu-page #menu {
+    justify-content: unset;
+    display: unset; }
+  #menu-page #menu-header {
+    background-position: center;
+    background-size: cover; } }
+@media (min-width: 681px) and (max-width: 916px) {
+  #menu-page #menu {
+    justify-content: unset;
+    display: unset; }
+  #menu-page #menu-header {
+    background-position: center;
+    background-size: cover; } }
+@media (max-width: 1020px) {
+  #reservation #information {
+    display: block; } }
+/* for ABOUT.HTML Sliders */
+@media (max-width: 1217px) and (min-width: 992px) {
+  #about .carousel-inner {
+    margin-top: 15%; } }
+@media (max-width: 1105px) and (min-width: 992px) {
+  #about .carousel-inner {
+    margin-top: 17%; } }
+@media (max-width: 1081px) and (min-width: 992px) {
+  #about .carousel-inner {
+    margin-top: 20%; } }
+@media (max-width: 1027px) and (min-width: 992px) {
+  #about .carousel-inner {
+    margin-top: 23%; } }
+@media (max-width: 1017px) and (min-width: 992px) {
+  #about #about-slide1 {
+    margin-top: 2%; } }
 html body {
   font-family: 'Cormorant Unicase', serif;
   background: #1d1d1d; }
@@ -12,7 +110,7 @@ html body {
   text-decoration-style: solid;
   text-decoration-color: #aca7a8; }
 
-#menu-page .menu-container .entree-container .entrees .menu-header, #menu-page .menu-container .appetizer-container .appetizers .menu-header, #menu-page .menu-container .dessert-container .desserts .menu-header, #contact .hours-header, #reservation .information .hours-header, #reservation .information .location-header, #about .testimonials .testimonial-subheader {
+#menu-page .menu-container .menu .entree-container .entrees .menu-header, #menu-page .menu-container .menu .appetizer-container .appetizers .menu-header, #menu-page .menu-container .menu .dessert-container .desserts .menu-header, #contact .hours-header, #reservation .information .hours-header, #reservation .information .location-header, #about .testimonials .testimonial-subheader {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -28,6 +126,7 @@ html body {
   margin-right: 40px; }
 
 #topnavbar {
+  width: 100%;
   /* ICONS */ }
   #topnavbar nav {
     border: none; }
@@ -48,8 +147,7 @@ html body {
     margin-top: 50px;
     margin-bottom: 50px; }
     #navbar .navbar .navbar-header {
-      border-bottom: 1px solid #97614a;
-      width: 126px; }
+      border-bottom: 1px solid #97614a; }
       #navbar .navbar .navbar-header .icon-bar {
         background: #97614a; }
     #navbar .navbar .navbar-brand {
@@ -129,50 +227,63 @@ html body {
     background: white;
     font-size: 16px;
     padding: 0 10px; }
-  #homepage .slogan h1 {
-    position: relative;
-    width: 600px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    text-transform: uppercase;
-    color: #97614a;
-    border-top: 3px solid #aca7a8;
-    border-bottom: 3px solid #aca7a8; }
+  #homepage .slogan {
+    width: 100%; }
+    #homepage .slogan h1 {
+      position: relative;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      text-transform: uppercase;
+      color: #97614a;
+      border-top: 3px solid #aca7a8;
+      border-bottom: 3px solid #aca7a8; }
   #homepage .menu-preview {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap; }
-    #homepage .menu-preview .menu-item1:hover {
-      background-size: 110%; }
-    #homepage .menu-preview .menu-item1 {
-      width: 350px;
-      height: 350px;
-      object-fit: cover; }
-    #homepage .menu-preview .menu-item2 {
-      width: 350px;
-      height: 350px;
-      object-fit: cover; }
-    #homepage .menu-preview .menu-item3 {
-      width: 350px;
-      height: 350px;
-      object-fit: cover; }
+    width: 100%;
+    overflow: hidden; }
+    #homepage .menu-preview .menu-preview-container {
+      position: relative; }
+      #homepage .menu-preview .menu-preview-container .menu-item1 {
+        width: 350px;
+        height: 350px;
+        object-fit: cover; }
+      #homepage .menu-preview .menu-preview-container .menu-item2 {
+        width: 350px;
+        height: 350px;
+        object-fit: cover; }
+      #homepage .menu-preview .menu-preview-container .menu-item3 {
+        width: 350px;
+        height: 350px;
+        object-fit: cover; }
+      #homepage .menu-preview .menu-preview-container h2 {
+        position: absolute;
+        height: 21%;
+        border-radius: 5px;
+        background: white;
+        color: black;
+        text-align: center;
+        font-weight: 600;
+        z-index: 1;
+        bottom: 0;
+        top: 0;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%); }
 
 /* HOMEPAGE */
 #gallery {
   margin-bottom: 50px; }
   #gallery .image-gallery-container {
     position: relative;
-    display: grid;
-    justify-content: space-around; }
-    #gallery .image-gallery-container .row1 {
-      display: flex; }
-    #gallery .image-gallery-container .row2 {
-      display: flex; }
-    #gallery .image-gallery-container .gallery-photo img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover; }
+    width: 100%; }
+    #gallery .image-gallery-container .row {
+      width: 100%;
+      margin: 0; }
+      #gallery .image-gallery-container .row .gallery-photo {
+        width: 100%;
+        height: 300px;
+        object-fit: cover; }
 
 /* GALLERY */
 /* //MENU.HTML// */
@@ -226,142 +337,145 @@ html body {
   #menu-page .menu-container {
     position: relative;
     display: inline-block;
-    width: 100%;
-    /* ENTREE CONTAINER */
-    /* APPETIZER CONTAINER */
-    /* DESSERT CONTAINER */ }
+    width: 100%; }
     #menu-page .menu-container .menu {
       position: inherit;
       display: flex;
-      justify-content: space-around; }
-    #menu-page .menu-container .entree-container {
-      position: inherit;
-      overflow: hidden;
-      background: black;
-      width: 400px;
-      /* ENTREES */ }
-      #menu-page .menu-container .entree-container .entrees {
-        /* MENU HEADER */ }
-        #menu-page .menu-container .entree-container .entrees .menu-header {
+      justify-content: space-around;
+      /* ENTREE CONTAINER */
+      /* APPETIZER CONTAINER */
+      /* DESSERT CONTAINER */ }
+      #menu-page .menu-container .menu .entree-container {
+        position: inherit;
+        overflow: hidden;
+        background: black;
+        flex-basis: 30%;
+        min-width: 300px;
+        /* ENTREES */ }
+        #menu-page .menu-container .menu .entree-container .entrees {
+          /* MENU HEADER */ }
+          #menu-page .menu-container .menu .entree-container .entrees .menu-header {
+            position: relative;
+            display: flex;
+            background-image: url(img/food1.jpg);
+            background-size: 600px;
+            background-position: -155px -50px;
+            height: 300px;
+            margin: 0; }
+            #menu-page .menu-container .menu .entree-container .entrees .menu-header .image-overlay {
+              background: rgba(0, 0, 0, 0.35);
+              margin: 0;
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              top: 0px; }
+            #menu-page .menu-container .menu .entree-container .entrees .menu-header h2 {
+              margin: 20px;
+              z-index: 1;
+              width: 100%;
+              text-align: center; }
+          #menu-page .menu-container .menu .entree-container .entrees .menu-items {
+            padding: 10px; }
+            #menu-page .menu-container .menu .entree-container .entrees .menu-items li {
+              list-style: none;
+              color: #d1d1d1; }
+              #menu-page .menu-container .menu .entree-container .entrees .menu-items li h4 {
+                color: #a3a3a3;
+                text-transform: uppercase; }
+                #menu-page .menu-container .menu .entree-container .entrees .menu-items li h4 .total {
+                  color: #97614a; }
+              #menu-page .menu-container .menu .entree-container .entrees .menu-items li p {
+                font-size: 16px; }
+      #menu-page .menu-container .menu .appetizer-container {
+        position: inherit;
+        overflow: hidden;
+        flex-basis: 30%;
+        min-width: 300px;
+        background: black;
+        /* APPETIZERS */ }
+        #menu-page .menu-container .menu .appetizer-container .appetizers .menu-header {
           position: relative;
           display: flex;
-          background-image: url(img/food1.jpg);
-          background-size: 600px;
-          background-position: -155px -50px;
+          background-image: url(img/food4.jpg);
+          background-position: center;
+          background-size: cover;
           height: 300px;
           margin: 0; }
-          #menu-page .menu-container .entree-container .entrees .menu-header .image-overlay {
+          #menu-page .menu-container .menu .appetizer-container .appetizers .menu-header h2 {
+            margin: 20px;
+            text-align: center;
+            width: 100%;
+            z-index: 1; }
+          #menu-page .menu-container .menu .appetizer-container .appetizers .menu-header .image-overlay {
             background: rgba(0, 0, 0, 0.35);
             margin: 0;
             height: 100%;
             width: 100%;
             position: absolute;
             top: 0px; }
-          #menu-page .menu-container .entree-container .entrees .menu-header h2 {
-            margin: 20px;
-            z-index: 1;
-            width: 100%;
-            text-align: center; }
-        #menu-page .menu-container .entree-container .entrees .menu-items {
+        #menu-page .menu-container .menu .appetizer-container .appetizers img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          position: relative;
+          top: -70px; }
+        #menu-page .menu-container .menu .appetizer-container .appetizers .menu-items {
           padding: 10px; }
-          #menu-page .menu-container .entree-container .entrees .menu-items li {
+          #menu-page .menu-container .menu .appetizer-container .appetizers .menu-items li {
             list-style: none;
             color: #d1d1d1; }
-            #menu-page .menu-container .entree-container .entrees .menu-items li h4 {
+            #menu-page .menu-container .menu .appetizer-container .appetizers .menu-items li h4 {
               color: #a3a3a3;
               text-transform: uppercase; }
-              #menu-page .menu-container .entree-container .entrees .menu-items li h4 .total {
+              #menu-page .menu-container .menu .appetizer-container .appetizers .menu-items li h4 .total {
                 color: #97614a; }
-            #menu-page .menu-container .entree-container .entrees .menu-items li p {
+            #menu-page .menu-container .menu .appetizer-container .appetizers .menu-items li p {
               font-size: 16px; }
-    #menu-page .menu-container .appetizer-container {
-      position: inherit;
-      overflow: hidden;
-      width: 400px;
-      background: black;
-      /* APPETIZERS */ }
-      #menu-page .menu-container .appetizer-container .appetizers .menu-header {
-        position: relative;
-        display: flex;
-        background-image: url(img/food4.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 300px;
-        margin: 0; }
-        #menu-page .menu-container .appetizer-container .appetizers .menu-header h2 {
-          margin: 20px;
-          text-align: center;
+      #menu-page .menu-container .menu .dessert-container {
+        position: inherit;
+        overflow: hidden;
+        background: black;
+        flex-basis: 30%;
+        min-width: 300px;
+        /* DESSERTS */ }
+        #menu-page .menu-container .menu .dessert-container .desserts .menu-header {
+          position: relative;
+          display: flex;
+          background-image: url(img/food3.jpg);
+          background-position: center;
+          background-size: cover;
+          height: 300px;
+          margin: 0; }
+          #menu-page .menu-container .menu .dessert-container .desserts .menu-header .image-overlay {
+            background: rgba(0, 0, 0, 0.35);
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px; }
+          #menu-page .menu-container .menu .dessert-container .desserts .menu-header h2 {
+            margin: 20px;
+            text-align: center;
+            width: 100%;
+            z-index: 1; }
+        #menu-page .menu-container .menu .dessert-container .desserts img {
           width: 100%;
-          z-index: 1; }
-        #menu-page .menu-container .appetizer-container .appetizers .menu-header .image-overlay {
-          background: rgba(0, 0, 0, 0.35);
-          margin: 0;
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          top: 0px; }
-      #menu-page .menu-container .appetizer-container .appetizers img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        position: relative;
-        top: -70px; }
-      #menu-page .menu-container .appetizer-container .appetizers .menu-items {
-        padding: 10px; }
-        #menu-page .menu-container .appetizer-container .appetizers .menu-items li {
-          list-style: none;
-          color: #d1d1d1; }
-          #menu-page .menu-container .appetizer-container .appetizers .menu-items li h4 {
-            color: #a3a3a3;
-            text-transform: uppercase; }
-            #menu-page .menu-container .appetizer-container .appetizers .menu-items li h4 .total {
-              color: #97614a; }
-          #menu-page .menu-container .appetizer-container .appetizers .menu-items li p {
-            font-size: 16px; }
-    #menu-page .menu-container .dessert-container {
-      position: inherit;
-      overflow: hidden;
-      background: black;
-      width: 400px;
-      /* DESSERTS */ }
-      #menu-page .menu-container .dessert-container .desserts .menu-header {
-        position: relative;
-        display: flex;
-        background-image: url(img/food3.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 300px;
-        margin: 0; }
-        #menu-page .menu-container .dessert-container .desserts .menu-header .image-overlay {
-          background: rgba(0, 0, 0, 0.35);
-          margin: 0;
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          top: 0px; }
-        #menu-page .menu-container .dessert-container .desserts .menu-header h2 {
-          margin: 20px;
-          text-align: center;
-          width: 100%;
-          z-index: 1; }
-      #menu-page .menu-container .dessert-container .desserts img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        position: relative;
-        top: -70px; }
-      #menu-page .menu-container .dessert-container .desserts .menu-items {
-        padding: 10px; }
-        #menu-page .menu-container .dessert-container .desserts .menu-items li {
-          list-style: none;
-          color: #d1d1d1; }
-          #menu-page .menu-container .dessert-container .desserts .menu-items li h4 {
-            color: #a3a3a3;
-            text-transform: uppercase; }
-            #menu-page .menu-container .dessert-container .desserts .menu-items li h4 .total {
-              color: #97614a; }
-          #menu-page .menu-container .dessert-container .desserts .menu-items li p {
-            font-size: 16px; }
+          height: 300px;
+          object-fit: cover;
+          position: relative;
+          top: -70px; }
+        #menu-page .menu-container .menu .dessert-container .desserts .menu-items {
+          padding: 10px; }
+          #menu-page .menu-container .menu .dessert-container .desserts .menu-items li {
+            list-style: none;
+            color: #d1d1d1; }
+            #menu-page .menu-container .menu .dessert-container .desserts .menu-items li h4 {
+              color: #a3a3a3;
+              text-transform: uppercase; }
+              #menu-page .menu-container .menu .dessert-container .desserts .menu-items li h4 .total {
+                color: #97614a; }
+            #menu-page .menu-container .menu .dessert-container .desserts .menu-items li p {
+              font-size: 16px; }
 
 /* MENU PAGE */
 /* //CONTACT.HTML// */

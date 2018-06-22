@@ -1,7 +1,4 @@
 @media (min-width: 300px) {
-  #navbar #navbarbottom {
-    margin-top: 0; }
-
   #homepage #carousel-example-generic {
     width: 100%;
     height: 100%; }
@@ -33,6 +30,9 @@
   /* HOMEPAGE */
   .slogan h1 {
     font-size: 2.25em; } }
+@media (max-width: 356px) {
+  #homepage #h2-1, #homepage #h2-2, #homepage #h2-3 {
+    width: 50%; } }
 @media (max-width: 518px) {
   #contact #form {
     width: 100%;
@@ -59,10 +59,16 @@
   #about #all-testimonials {
     width: 100%;
     margin: 0; } }
+@media (max-width: 518px) and (min-width: 357px) {
+  #homepage #h2-1, #homepage #h2-2, #homepage #h2-3 {
+    width: 40%; } }
 @media (max-width: 720px) {
   #about #all-testimonials {
     width: 100%;
     margin: 0; } }
+@media (max-width: 720px) and (min-width: 519px) {
+  #homepage #h2-1, #homepage #h2-2, #homepage #h2-3 {
+    width: 30%; } }
 @media (min-width: 300px) and (max-width: 680px) {
   #menu-page #menu {
     justify-content: unset;
@@ -96,6 +102,21 @@
 @media (max-width: 1017px) and (min-width: 992px) {
   #about #about-slide1 {
     margin-top: 2%; } }
+@media only screen and (min-width: 1024px) {
+  figure {
+    width: calc(100% /4); } }
+@media only screen and (max-width: 1024px) {
+  figure {
+    width: calc(100% /3); } }
+@media only screen and (max-width: 840px) {
+  figure {
+    width: calc(100% /3); } }
+@media only screen and (max-width: 640px) {
+  figure {
+    width: calc(100% /2); } }
+@media only screen and (max-width: 400px) {
+  figure {
+    width: 100%; } }
 html body {
   font-family: 'Cormorant Unicase', serif;
   background: #1d1d1d; }
@@ -144,7 +165,6 @@ html body {
   #navbar .navbar {
     font-size: 18px;
     font-weight: 600;
-    margin-top: 50px;
     margin-bottom: 50px; }
     #navbar .navbar .navbar-header {
       border-bottom: 1px solid #97614a; }
@@ -183,8 +203,7 @@ html body {
   #homepage #carousel-example-generic #slide1 img {
     width: 100%;
     height: 400px;
-    object-fit: cover;
-    object-position: 0px -240px; }
+    object-fit: cover; }
   #homepage #carousel-example-generic #slide1 p {
     position: absolute;
     display: inline-table;
@@ -199,8 +218,7 @@ html body {
   #homepage #carousel-example-generic #slide2 img {
     width: 100%;
     height: 400px;
-    object-fit: cover;
-    object-position: 0px -248px; }
+    object-fit: cover; }
   #homepage #carousel-example-generic #slide2 p {
     position: absolute;
     display: inline-table;
@@ -245,23 +263,23 @@ html body {
     #homepage .menu-preview .menu-preview-container {
       position: relative; }
       #homepage .menu-preview .menu-preview-container .menu-item1 {
-        width: 350px;
+        width: 100%;
         height: 350px;
         object-fit: cover; }
       #homepage .menu-preview .menu-preview-container .menu-item2 {
-        width: 350px;
+        width: 100%;
         height: 350px;
         object-fit: cover; }
       #homepage .menu-preview .menu-preview-container .menu-item3 {
-        width: 350px;
+        width: 100%;
         height: 350px;
         object-fit: cover; }
       #homepage .menu-preview .menu-preview-container h2 {
         position: absolute;
-        height: 21%;
+        width: 20%;
+        height: 36px;
         border-radius: 5px;
-        background: white;
-        color: black;
+        color: white;
         text-align: center;
         font-weight: 600;
         z-index: 1;
@@ -270,20 +288,60 @@ html body {
         left: 50%;
         right: 0;
         transform: translate(-50%); }
+        #homepage .menu-preview .menu-preview-container h2 a {
+          color: white;
+          text-shadow: -1px -1px 2px black; }
 
 /* HOMEPAGE */
 #gallery {
-  margin-bottom: 50px; }
+  width: 80%;
+  margin: 2rem auto;
+  /* .image-gallery-container {
+       position: relative;
+       width: 100%;
+       //display: grid;
+       //justify-content: space-around;
+       
+       .row {
+           width: 100%;
+           margin: 0;
+           
+           .gallery-photo {
+               width: 100%;
+               height: 300px;
+               object-fit: cover;
+           }  
+       }
+   } */ }
   #gallery .image-gallery-container {
+    width: 100%;
+    padding: 1rem 0; }
+  #gallery figure {
+    float: left;
     position: relative;
-    width: 100%; }
-    #gallery .image-gallery-container .row {
-      width: 100%;
-      margin: 0; }
-      #gallery .image-gallery-container .row .gallery-photo {
-        width: 100%;
-        height: 300px;
-        object-fit: cover; }
+    margin-bottom: 1rem; }
+  #gallery .image-gallery-container::after, #gallery .image-gallery-container::before {
+    content: "";
+    display: block; }
+  #gallery .image-gallery-container::after {
+    clear: both; }
+  #gallery figure a {
+    display: block;
+    height: 100%;
+    width: calc(100% - 2rem);
+    margin-left: 1rem; }
+  #gallery figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-bottom: 0; }
+  #gallery figcaption {
+    background: #f39f3f;
+    color: #fff;
+    text-align: center;
+    padding: .7rem;
+    margin: 0 1rem; }
 
 /* GALLERY */
 /* //MENU.HTML// */

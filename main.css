@@ -65,15 +65,25 @@
 @media (max-width: 730px) and (min-width: 550px) {
   #homepage #menu-choice #menu-preview-container2 {
     background-size: 800px; }
+    #homepage #menu-choice #menu-preview-container2 h2 {
+      font-size: 2em; }
   #homepage #menu-choice #menu-preview-container3 {
-    background-size: 800px; } }
+    background-size: 800px; }
+    #homepage #menu-choice #menu-preview-container3 h2 {
+      font-size: 2em; } }
 @media (max-width: 549px) {
+  #homepage #menu-choice #menu-preview-container1 h2 {
+    font-size: 3em; }
   #homepage #menu-choice #menu-preview-container2 {
     background-size: cover;
     background-position-y: 0; }
+    #homepage #menu-choice #menu-preview-container2 h2 {
+      font-size: 3em; }
   #homepage #menu-choice #menu-preview-container3 {
     background-size: cover;
-    background-position-y: 0; } }
+    background-position-y: 0; }
+    #homepage #menu-choice #menu-preview-container3 h2 {
+      font-size: 3em; } }
 @media (max-width: 720px) {
   #about #all-testimonials {
     width: 100%;
@@ -511,7 +521,7 @@ html body {
             background-size: 600px;
             background-position: -155px -50px;
             height: 300px;
-            margin: 0; }
+            margin: 35px 0 0 0; }
             #menu-page .menu-container .menu .entree-container .entrees .menu-header .image-overlay {
               background: rgba(0, 0, 0, 0.35);
               margin: 0;
@@ -551,7 +561,7 @@ html body {
           background-position: center;
           background-size: cover;
           height: 300px;
-          margin: 0; }
+          margin: 35px 0 0 0; }
           #menu-page .menu-container .menu .appetizer-container .appetizers .menu-header h2 {
             margin: 20px;
             text-align: center;
@@ -597,7 +607,7 @@ html body {
           background-position: center;
           background-size: cover;
           height: 300px;
-          margin: 0; }
+          margin: 35px 0 0 0; }
           #menu-page .menu-container .menu .dessert-container .desserts .menu-header .image-overlay {
             background: rgba(0, 0, 0, 0.35);
             margin: 0;

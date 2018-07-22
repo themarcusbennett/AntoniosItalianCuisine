@@ -130,9 +130,17 @@
             
             #menu-preview-container2 {
                 background-size: 800px;
+                
+                h2 {
+                    font-size: 2em;
+                }
             }
             #menu-preview-container3 {
                 background-size: 800px;
+                
+                h2 {
+                    font-size: 2em;
+                }
             }
         }
     }
@@ -142,13 +150,29 @@
     #homepage{
         #menu-choice{
             
+            #menu-preview-container1 {
+                
+                h2 {
+                    font-size: 3em;
+                }
+            }
+            
             #menu-preview-container2 {
                 background-size: cover;
                 background-position-y: 0;
+                
+                h2 {
+                    font-size: 3em;
+                }
+                
             }
             #menu-preview-container3 {
                 background-size: cover;
                 background-position-y: 0;
+                
+                h2 {
+                    font-size: 3em;
+                }
             }
         }
     }
@@ -815,7 +839,7 @@ figcaption{
                         background-size: 600px;
                         background-position: -155px -50px;
                         height: 300px;
-                        margin: 0;
+                        margin: 35px 0 0 0;
 
                         .image-overlay {
                             background: rgba(0, 0, 0, 0.35);
@@ -882,7 +906,7 @@ figcaption{
                         background-position: center;
                         background-size: cover;
                         height: 300px;
-                        margin: 0;
+                        margin: 35px 0 0 0;
 
                         h2 {
                             margin: 20px;
@@ -955,7 +979,7 @@ figcaption{
                         background-position: center;
                         background-size: cover;
                         height: 300px;
-                        margin: 0;
+                        margin: 35px 0 0 0;
 
                         .image-overlay {
                             background: rgba(0, 0, 0, 0.35);
